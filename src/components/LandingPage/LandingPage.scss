@@ -1,0 +1,30 @@
+.landing-page-main {
+   display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+   align-items: center;
+   color: white;
+}
+
+.top-landing-container {
+   width: 100vw;
+   display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bottom-landing-container {
+   width: 100vw;
+   display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.landing-button-container {
+   padding: 2rem;
+}
