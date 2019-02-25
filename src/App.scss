@@ -1,7 +1,10 @@
+@import './globalStyles.scss';
+
 .App {
   text-align: center;
   box-sizing: border-box;
-  background-color: black;
+  background-color: $primary-background-color;
+  color: $primary-text-color;
 }
 
 .page {
