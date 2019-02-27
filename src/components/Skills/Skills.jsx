@@ -42,7 +42,7 @@ export default class Skills extends Component {
             <Link to='/' className='link'>
                <i className="fas fa-undo class back-button"></i>
             </Link>
-            <h1 style={{ margin: '0px' }}>Skills</h1>
+            <h1 style={{ margin: '0px' }} className='skills-text'>Skills</h1>
             <div className='skills-container'>
                <div className='skill-container skill-1'>
                   {htmlIcon}
@@ -77,6 +77,7 @@ export default class Skills extends Component {
                   <p>Sass</p>
                </div>
             </div>
+               <h2 className='and-more-text'>and more...</h2>
          </div>
       )
    }
