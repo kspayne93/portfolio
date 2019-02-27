@@ -1,3 +1,9 @@
+//FONTS
+@font-face {
+	font-family: neon;
+	src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
 //VARIABLES
 $primary-background-color: black;
 $primary-text-color: white;
@@ -13,4 +19,33 @@ $primary-text-color: white;
          transition: .33s;
          font-size: 2.5rem;
       }
+}
+
+//ANIMATIONS
+@keyframes expand {
+	0% {
+		opacity: 1;
+		width: 0vw;
+		height: 0vw;
+	}
+	50% {
+		opacity: 1;
+		width: 50vw;
+		height: 0vh;
+	}
+	100% {
+		opacity: 1;
+		width: 50vw;
+		height: 80vh;
+	}
+}
+
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
 }
