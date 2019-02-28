@@ -21,7 +21,7 @@ const data = {
             {
                "description": "Landing Page",
                "image": `${milestoneLanding}`
-            }
+            },
          ]
       },
       {
@@ -40,8 +40,8 @@ const data = {
          "images": [
             {
                "description": "Landing Page",
-               "image": `${milestoneLanding}`
-            }
+               "image": `${kanooLanding}`
+            },
          ]
       }
    ],

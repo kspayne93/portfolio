@@ -18,18 +18,29 @@ export default class Projects extends Component {
          infinite: true,
          speed: 500,
          slidesToShow: 1,
-         slidesToScroll: 1
+         slidesToScroll: 1,
+         fade: true
       };
+
       const projectData = data.projects;
+      let images;
       const displayProjects = projectData.map(project => {
          const mainPhoto = project.mainPhoto;
+         images = project.images.map(image => {
+            return (
+               <div>
+                  <img src={image.image} alt="" style={{ width: '70vw', height: '75vh' }} />
+                  <p>{image.description}</p>
+               </div>
+            )
+         })
          const keyPoints = project.keyPoints.map(bulletPoint => <li>{bulletPoint}</li>)
          return (
             <div class="project-card milestone-card" style={{ backgroundImage: `url(${mainPhoto})` }}>
                <div className='card-text'>
                   <div className='project-card-header'>
                      <h2>{project.name}</h2>
-                     <p onClick={() => this.setState({ clicked: true })}>View Photos</p>
+                     <p onClick={() => this.setState({ clicked: true })} style={{ color: 'salmon' }}>View Photos</p>
                   </div>
                   <div>
                      <ul>
@@ -65,9 +76,9 @@ export default class Projects extends Component {
          <div className='modal-wrapper'>
             <i className="fas fa-times modal-back-button" onClick={() => this.setState({ clicked: false })}></i>
             <div>
-            <Slider {...settings}>
-               {}
-            </Slider>
+               <Slider {...settings} className='slider'>
+               {images}
+               </Slider>
             </div>
          </div>
       )
