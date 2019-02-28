@@ -3,7 +3,10 @@
 .App {
   text-align: center;
   box-sizing: border-box;
-  background-color: $primary-background-color;
+  background: $background-image;
+  background-size: cover;
+  // background-position: center;
+  background-repeat: none;
   color: $primary-text-color;
 }
 
