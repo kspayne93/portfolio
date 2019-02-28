@@ -22,10 +22,10 @@ export default class LandingPage extends Component {
             <div className='middle-landing-container'>
                <div>
                   <h1 className='orange-neon'>
-                     Kyle<span>___</span>Payne
+                     Kyle<span>__</span>Payne
                   </h1>
                   <h3 className='blue-neon'>
-                     Full-Stack<span>___</span>Web<span>___</span>Developer
+                     Full-Stack<span>__</span>Web<span>___</span>Developer
                   </h3>
                </div>
             </div>
