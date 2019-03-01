@@ -16,6 +16,10 @@ $background-image: url('../src//assets//images/brick-wall.jpg');
    top: 3%;
    left: 2%;
    transition: .33s;
+   text-shadow: 0 0 1vw #b1b1b1, 0 0 3vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 .4vw #b1b1b1, .3vw .5vw .1vw #444141;
+   color: #ffffff;
+	margin: 0;
+
       &:hover {
          transition: .33s;
          font-size: 2.5rem;
