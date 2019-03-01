@@ -33,6 +33,7 @@
    animation-delay: .25s;
 	animation-fill-mode: forwards;
 	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.521);
 }
 
 .contact-text {
@@ -42,6 +43,6 @@
 	opacity: 0;
 	padding: 1.5em;
 		p {
-			font-size: 1.25rem;
+			font-size: 1.5rem;
 		}
 }

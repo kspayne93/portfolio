@@ -15,18 +15,18 @@ export default class Contact extends Component {
             </h1>
             <div className='contact-container'>
                <div className='contact-text'>
-                  <div>
-                     kspayne93@gmail.com
-                  </div>
-                  <div>
-                     (385) 335-1329
-                  </div>
-                  <div>
-                     www.linkedin.com/in/kylepayne93
-                  </div>
-                  <div>
-                     www.github.com/kspayne93
-                  </div>
+                     <p>
+                        kspayne93@gmail.com
+                     </p>
+                     <p>
+                        (385) 335-1329
+                     </p>
+                     <p>
+                        www.linkedin.com/in/kylepayne93
+                     </p>
+                     <p>
+                        www.github.com/kspayne93
+                     </p>
                </div>
             </div>
          </div>
