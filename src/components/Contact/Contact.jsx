@@ -15,18 +15,22 @@ export default class Contact extends Component {
             </h1>
             <div className='contact-container'>
                <div className='contact-text'>
-                     <p>
-                        kspayne93@gmail.com
-                     </p>
-                     <p>
-                        (385) 335-1329
-                     </p>
-                     <p>
-                        www.linkedin.com/in/kylepayne93
-                     </p>
-                     <p>
-                        www.github.com/kspayne93
-                     </p>
+                  <div>
+                     <i className="far fa-envelope contact-icon"></i>
+                     <p> kspayne93@gmail.com </p>
+                  </div>
+                  <div>
+                     <i class="fas fa-mobile-alt contact-icon"></i>
+                     <p> (385) 335-1329 </p>
+                  </div>
+                  <div>
+                     <i class="fab fa-linkedin contact-icon"></i>
+                     <p> www.linkedin.com/in/kylepayne93 </p>
+                  </div>
+                  <div>
+                     <i class="fab fa-github contact-icon"></i>
+                     <p> www.github.com/kspayne93 </p>
+                  </div>
                </div>
             </div>
          </div>
