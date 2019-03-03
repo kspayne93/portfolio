@@ -158,19 +158,19 @@ export default class Projects extends Component {
             <div>
                <Slider {...settings} className='slider'>
                   <div>
-                     <img src={milestone.image1} alt="" style={{ width: '70vw', height: 'auto' }} className='screenshot' />
+                     <img src={milestone.image1} alt="" className='screenshot' />
                      <p>{milestone.image1description}</p>
                   </div>
                   <div>
-                     <img src={milestone.image2} alt="" style={{ width: '70vw', height: 'auto' }} className='screenshot' />
+                     <img src={milestone.image2} alt="" className='screenshot' />
                      <p>{milestone.image2description}</p>
                   </div>
                   <div>
-                     <img src={milestone.image3} alt="" style={{ width: '70vw', height: 'auto' }} className='screenshot' />
+                     <img src={milestone.image3} alt="" className='screenshot' />
                      <p>{milestone.image3description}</p>
                   </div>
                   <div>
-                     <img src={milestone.image4} alt="" style={{ width: '70vw', height: 'auto' }} className='screenshot' />
+                     <img src={milestone.image4} alt="" className='screenshot' />
                      <p>{milestone.image4description}</p>
                   </div>
                </Slider>
@@ -184,23 +184,23 @@ export default class Projects extends Component {
             <div>
                <Slider {...settings} className='slider'>
                   <div>
-                     <img src={kanoo.image1} alt="" style={{ width: '70vw', height: 'auto' }} />
+                     <img src={kanoo.image1} alt="" />
                      <p>{kanoo.image1description}</p>
                   </div>
                   <div>
-                     <img src={kanoo.image2} alt="" style={{ width: '70vw', height: 'auto' }} />
+                     <img src={kanoo.image2} alt="" />
                      <p>{kanoo.image2description}</p>
                   </div>
                   <div>
-                     <img src={kanoo.image3} alt="" style={{ width: '70vw', height: 'auto' }} />
+                     <img src={kanoo.image3} alt="" />
                      <p>{kanoo.image3description}</p>
                   </div>
                   <div>
-                     <img src={kanoo.image4} alt="" style={{ width: '70vw', height: 'auto' }} />
+                     <img src={kanoo.image4} alt="" />
                      <p>{kanoo.image4description}</p>
                   </div>
                   <div>
-                     <img src={kanoo.image5} alt="" style={{ width: '70vw', height: 'auto' }} />
+                     <img src={kanoo.image5} alt="" />
                      <p>{kanoo.image5description}</p>
                   </div>
                </Slider>
