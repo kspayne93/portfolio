@@ -208,3 +208,50 @@
 		color: #28D7FE;
 	}
 }
+
+//MEDIA QUERIES
+@media (min-width: 374px ) {
+	.orange-neon {
+		font-size: 13vw;
+	}
+	.blue-neon {
+		font-size: 5vw;
+	}
+	.landing-button-container {
+		font-size: 2rem;
+		padding: 1rem;
+	}
+	.bottom-landing-container {
+		margin: 0;
+	}
+}
+
+@media (min-width: 767px) {
+	.orange-neon {
+		font-size: 10vw;
+	}
+	.blue-neon {
+		font-size: 5vw;
+	}
+	.landing-button-container {
+		font-size: 2.5rem;
+	}
+}
+
+@media (min-width: 811px) {
+	.orange-neon {
+		font-size: 9vw;
+	}
+	.blue-neon {
+		font-size: 4vw;
+	}
+}
+
+@media (min-width: 1441px) {
+	.orange-neon {
+		font-size: 7vw;
+	}
+	.blue-neon {
+		font-size: 3vw;
+	}
+}
