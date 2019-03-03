@@ -141,7 +141,33 @@
       left: 3%;
    }
 }
-@media (min-width: 737px) {
 
+@media (min-width: 813px) {
+   .skills-container {
+      width: 65vw;
+      height: 70vh;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: space-around;
+   }
+   
+   .skill-container {
+      height: 12rem;
+      width: 12rem;
+   
+      p {
+         font-size: 20px;
+      }
+   
+      text-align: center;
+   }
 }
 
+@media (min-width: 1441px) {
+   .skills-container {
+      width: 1000px;
+   }
+}
