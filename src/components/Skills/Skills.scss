@@ -155,8 +155,8 @@
    }
    
    .skill-container {
-      height: 12rem;
-      width: 12rem;
+      height: 10rem;
+      width: 10rem;
    
       p {
          font-size: 20px;
@@ -169,5 +169,9 @@
 @media (min-width: 1441px) {
    .skills-container {
       width: 1000px;
+   }
+   .skill-container {
+      height: 12rem;
+      width: 12rem;
    }
 }
