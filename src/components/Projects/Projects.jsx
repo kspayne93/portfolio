@@ -67,6 +67,7 @@ export default class Projects extends Component {
          fade: true
       };
 
+      //Milestone Project Card
       const milestone = this.state.projects[0];
       const milestoneProject = (
          <div
@@ -77,6 +78,23 @@ export default class Projects extends Component {
                <div className='project-card-header'>
                   <h2>{milestone.name}</h2>
                   <p onClick={() => this.setState({ viewMilestoneImages: true })} style={{ color: 'salmon' }}>View Photos</p>
+                  <div className='small-link-container'> 
+                  {/* Only displays in mobile view */}
+                     <div>
+                        <a style={{ color: 'white' }} target='_blank' href={milestone.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                        <div>
+                           <span>Username: {milestone.username}</span>
+                           <span> | Password: {milestone.password}</span>
+                        </div>
+                     </div>
+                     <div>
+                        <a style={{ color: 'white' }} target='_blank' href={milestone.codeURL} rel="noopener noreferrer">View Code</a>
+                        <div>
+                           <span style={{ opacity: '0' }} > View Code </span>
+                        </div>
+                     </div>
+
+                  </div>
                </div>
                <div>
                   <ul>
@@ -109,6 +127,7 @@ export default class Projects extends Component {
          </div>
       )
 
+      //Kanoo Project Card
       const kanoo = this.state.projects[1];
       const kanooProject = (
          <div
@@ -119,6 +138,23 @@ export default class Projects extends Component {
                <div className='project-card-header'>
                   <h2>{kanoo.name}</h2>
                   <p onClick={() => this.setState({ viewKanooImages: true })} style={{ color: 'salmon' }}>View Photos</p>
+                  <div className='small-link-container'>
+                  {/* Only displays in mobile view */}
+                     <div>
+                        <a style={{ color: 'white' }} target='_blank' href={kanoo.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                        <div>
+                           <span>Username: {kanoo.username}</span>
+                           <span> | Password: {kanoo.password}</span>
+                        </div>
+                     </div>
+                     <div>
+                        <a style={{ color: 'white' }} target='_blank' href={kanoo.codeURL} rel="noopener noreferrer">View Code</a>
+                        <div>
+                           <span style={{ opacity: '0' }} > View Code </span>
+                        </div>
+                     </div>
+
+                  </div>
                </div>
                <div>
                   <ul>
@@ -127,7 +163,7 @@ export default class Projects extends Component {
                      <li>{kanoo.keyPoint3}</li>
                      {kanoo.keyPoint4 && <li>{kanoo.keyPoint4}</li>}
                   </ul>
-                  <div className='technologies-list'>
+                  <div className='technologies-list' style={{ textAlign: 'center' }}>
                      <h5>{kanoo.technologies}</h5>
                   </div>
                   <div className='link-container'>
@@ -151,7 +187,7 @@ export default class Projects extends Component {
          </div>
       )
 
-
+      //Milestone Modal
       let milestoneImagesModal = (
          <div className='modal-wrapper'>
             <i className="fas fa-times modal-back-button" onClick={() => this.setState({ viewMilestoneImages: false })}></i>
@@ -177,7 +213,8 @@ export default class Projects extends Component {
             </div>
          </div>
       )
-
+      
+      //Kanoo Modal
       let kanooImagesModal = (
          <div className='modal-wrapper'>
             <i className="fas fa-times modal-back-button" onClick={() => this.setState({ viewKanooImages: false })}></i>
@@ -215,7 +252,8 @@ export default class Projects extends Component {
                <i className="fas fa-undo class back-button"></i>
             </Link>
             <h1 style={{ marginBottom: '1rem' }} className='projects-text'>Projects</h1>
-            <h3 style={{ margin: '0px' }}>(Hover over picture for details)</h3>
+            <h3 style={{ margin: '0px' }} className='hover-for-detail-text'>(Hover over picture for details)</h3>
+            <h3 style={{ margin: '0px' }} className='touch-for-detail-text'>(Touch picture for details)</h3>
             <div className='projects-container'>
                {milestoneProject}
                {kanooProject}

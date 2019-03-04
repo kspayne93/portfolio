@@ -30,6 +30,12 @@
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
+	background-position: center;
+	background-size: cover;
+	animation: fadeIn .33s linear;
+	animation-delay: .25s;
+	animation-fill-mode: forwards;
+	opacity: 0;
 
 	card-text {
 		opacity: 0;
@@ -58,6 +64,7 @@
 
 			p {
 				text-decoration: underline;
+
 				&:hover {
 					cursor: pointer;
 				}
@@ -78,25 +85,6 @@
 	}
 }
 
-.milestone-card {
-	background-position: center;
-	background-size: cover;
-	animation: fadeIn .33s linear;
-	animation-delay: .25s;
-	animation-fill-mode: forwards;
-	opacity: 0;
-}
-
-.kanoo-card {
-	// background-image: url('../../assets/images/kanoo-landing-screenshot.png');
-	background-position: center;
-	background-size: cover;
-	animation: fadeIn .33s linear;
-	animation-delay: .5s;
-	animation-fill-mode: forwards;
-	opacity: 0;
-}
-
 .link-container {
 	width: 100%;
 	display: flex;
@@ -104,6 +92,10 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
+}
+
+.small-link-container {
+	display: none;
 }
 
 .technologies-list {
@@ -132,6 +124,7 @@
 	top: 1rem;
 	right: 1rem;
 	font-size: 2.5rem;
+
 	&:hover {
 		cursor: pointer;
 	}
@@ -140,18 +133,92 @@
 .image-container {
 	img {
 		width: 600px;
-		height: 370px;;
+		height: 370px;
+		;
 	}
 }
 
 .slider {
 	width: 70vw;
 	height: 75vh;
-		div {
-			img {
-				width: 70vw;
-				height: auto;
-			}
+
+	div {
+		img {
+			width: 70vw;
+			height: auto;
 		}
+	}
 }
 
+.touch-for-detail-text {
+	display: none;
+}
+
+//MEDIA QUERIES
+@media (max-width: 415px) {
+	.hover-for-detail-text {
+		display: none;
+	}
+
+	.touch-for-detail-text {
+		display: block;
+	}
+
+	.projects-container {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.project-card {
+		width: 95vw;
+		height: 230px;
+	}
+
+	.small-link-container {
+		display: block;
+		div {
+			margin: 1rem 0;
+		}
+	}
+}
+
+@media (max-width: 814px) {
+	.hover-for-detail-text {
+		display: none;
+	}
+
+	.touch-for-detail-text {
+		display: block;
+	}
+
+	.projects-container {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.project-card {
+		width: 95vw;
+		height: 230px;
+	}
+
+	.card-text {
+		ul {
+			display: none;
+		}
+		.technologies-list {
+			width: 80%;
+			margin: 0;
+
+		}
+		h5 {
+			display: none;
+		}
+		.link-container {
+			display: none;
+		}
+	}
+}

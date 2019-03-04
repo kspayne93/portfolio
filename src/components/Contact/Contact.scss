@@ -54,3 +54,15 @@
 .contact-icon {
 	font-size: 2rem;
 }
+
+//MEDIA QUERIES
+@media(max-width: 813px) {
+	.contact-text {
+		div {
+			margin: 1rem;
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
+}

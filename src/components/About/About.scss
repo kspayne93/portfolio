@@ -26,6 +26,7 @@
 	animation-fill-mode: forwards;
 	opacity: 0;
 	background-color: rgba(0, 0, 0, 0.521);
+	overflow: auto;
 }
 
 .about-text {
@@ -34,6 +35,9 @@
 	animation-fill-mode: forwards;
 	opacity: 0;
 	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 		p {
 			font-size: 1.5rem;
 		}
@@ -42,4 +46,12 @@
 .about-img {
 	width: 10rem;
 	height: auto;
+}
+
+@media (max-width: 900px) {
+	.about-text {
+		p {
+			font-size: 1rem;
+		}
+	}
 }
