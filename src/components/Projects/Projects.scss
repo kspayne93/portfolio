@@ -36,14 +36,25 @@
 	animation-delay: .25s;
 	animation-fill-mode: forwards;
 	opacity: 0;
+	z-index: 1;
 
 	card-text {
 		opacity: 0;
 		transition: .25s;
+		z-index: 0;
 	}
 
 	div {
 		opacity: 0;
+		z-index: 0;
+	}
+
+	p {
+		z-index: 0;
+	}
+
+	a {
+		z-index: 0;
 	}
 
 	&:hover {
@@ -56,6 +67,7 @@
 			background-color: rgba(0, 0, 0, 0.795);
 			opacity: 1;
 			transition: .25s;
+			z-index: 2;
 
 			h2 {
 				text-transform: uppercase;
@@ -64,6 +76,7 @@
 
 			p {
 				text-decoration: underline;
+				z-index: 2;
 
 				&:hover {
 					cursor: pointer;
@@ -71,8 +84,13 @@
 			}
 		}
 
+		a {
+			z-index: 2;
+		}
+
 		div {
 			opacity: 1;
+			z-index: 2;
 
 			ul {
 				text-align: left;
