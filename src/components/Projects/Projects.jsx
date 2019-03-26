@@ -50,10 +50,27 @@ export default class Projects extends Component {
             image3description: 'My Trips view showing all user trips (user can search, and toggle between upcoming / completed trips)',
             image4description: 'Trip Details View (user can update budget, take notes (text editor made with Quill), add destinations, add activities, add travelers). All travelers who are assigned to this trip can edit and collaberate.',
             image5description: 'Bucket List View'
+         },
+         {
+            name: 'Keyboard Hero',
+            keyPoint1: 'A typing challenge that tests a user`s speed and accuracy.',
+            keyPoint2: `A fun full-stack web application which helps people improve their typing skills.`,
+            keyPoint3: `Uses javascript to check for user's typing accuracy in real-time`,
+            technologies: 'REACT | NODE | EXPRESS | MASSIVE | AXIOS | SASS | POSTGRESQL',
+            liveSiteURL: 'https://www.keyboardhero.fun',
+            codeURL: 'https://github.com/kspayne93/keyboard-hero',
+            mainPhoto: 'https://s3.us-west-1.amazonaws.com/kyle-payne-portfolio-photos/keyboard-hero-landing.png?response-content-disposition=inline&X-Amz-Security-Token=FQoGZXIvYXdzEFAaDMme%2B2Z4MojIB9xp7SK4A1xXAoTk669rK7vfXCo6h%2BjFk%2Bfbd4zQlUopNHi%2FMM%2BK91UKAeaT1vPoxfg0H3cXGuQp9DDiGcr0DjSq%2Bq%2BhH1o%2FlX3laoNymU8PMuU2fQwfhgNr3IagarIdV0I50BZYiTvoVqFxBnQ4oePbKJVEw8UCUB35ugxHiP5YZ%2BO55StasUVGbd6PeOTwqjMzft4kp8vZRLfDgze%2B8gW2mvhowlxndMRmvnWIUPGLo1gbBd0onu8LjWOybvHq0JaA8Ur9hXQISEUVquJCNa69Fk%2Fitvk2jIrUkHJdGxef8GlWQOtyxCHGtxdSHkrVcnreP%2F9Xh8jjVNDopq0t9ZcFFGQjAuHXMk6%2BOC1Jjh%2B3PBXIFOAl%2Bh%2BjEqUuuLB6fMmZUKlG%2FTwhlPR346olIC99B9x%2FenYTMV1crJL57j8ihuTOrjL4nDo6vJjZXWF3GCGAOpzUxhHlT96880zQHoCE0dmihXNdcE74SRO19ALWecVTZbOqc8nrMHnPuIrjGNikuylXFNt0fYXbxzOqZXj9AHoQIV4w%2BaMvGvVtKAw5lYajjhGoKJ9aANqCmyoWYLD87CeFh44Man%2FqzBjsKKeF5%2BQF&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190326T063111Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAYE2WB5AWIZOIJGWM%2F20190326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Signature=936dc38fcfa568e627771378ccc69075cbcb87161f62780fe1ef64ce58ac8730',
+            image1: 'https://s3.us-west-1.amazonaws.com/kyle-payne-portfolio-photos/keyboard-hero-typing-challenge.png?response-content-disposition=inline&X-Amz-Security-Token=FQoGZXIvYXdzEFAaDMme%2B2Z4MojIB9xp7SK4A1xXAoTk669rK7vfXCo6h%2BjFk%2Bfbd4zQlUopNHi%2FMM%2BK91UKAeaT1vPoxfg0H3cXGuQp9DDiGcr0DjSq%2Bq%2BhH1o%2FlX3laoNymU8PMuU2fQwfhgNr3IagarIdV0I50BZYiTvoVqFxBnQ4oePbKJVEw8UCUB35ugxHiP5YZ%2BO55StasUVGbd6PeOTwqjMzft4kp8vZRLfDgze%2B8gW2mvhowlxndMRmvnWIUPGLo1gbBd0onu8LjWOybvHq0JaA8Ur9hXQISEUVquJCNa69Fk%2Fitvk2jIrUkHJdGxef8GlWQOtyxCHGtxdSHkrVcnreP%2F9Xh8jjVNDopq0t9ZcFFGQjAuHXMk6%2BOC1Jjh%2B3PBXIFOAl%2Bh%2BjEqUuuLB6fMmZUKlG%2FTwhlPR346olIC99B9x%2FenYTMV1crJL57j8ihuTOrjL4nDo6vJjZXWF3GCGAOpzUxhHlT96880zQHoCE0dmihXNdcE74SRO19ALWecVTZbOqc8nrMHnPuIrjGNikuylXFNt0fYXbxzOqZXj9AHoQIV4w%2BaMvGvVtKAw5lYajjhGoKJ9aANqCmyoWYLD87CeFh44Man%2FqzBjsKKeF5%2BQF&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190326T062648Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAYE2WB5AWIZOIJGWM%2F20190326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Signature=f532413a818f98597ea1cd06eab7729c0ad002a4b78cff8ac49e508534b2da9c',
+            image2: 'https://s3.us-west-1.amazonaws.com/kyle-payne-portfolio-photos/keyboard-hero-modal.png?response-content-disposition=inline&X-Amz-Security-Token=FQoGZXIvYXdzEFAaDMme%2B2Z4MojIB9xp7SK4A1xXAoTk669rK7vfXCo6h%2BjFk%2Bfbd4zQlUopNHi%2FMM%2BK91UKAeaT1vPoxfg0H3cXGuQp9DDiGcr0DjSq%2Bq%2BhH1o%2FlX3laoNymU8PMuU2fQwfhgNr3IagarIdV0I50BZYiTvoVqFxBnQ4oePbKJVEw8UCUB35ugxHiP5YZ%2BO55StasUVGbd6PeOTwqjMzft4kp8vZRLfDgze%2B8gW2mvhowlxndMRmvnWIUPGLo1gbBd0onu8LjWOybvHq0JaA8Ur9hXQISEUVquJCNa69Fk%2Fitvk2jIrUkHJdGxef8GlWQOtyxCHGtxdSHkrVcnreP%2F9Xh8jjVNDopq0t9ZcFFGQjAuHXMk6%2BOC1Jjh%2B3PBXIFOAl%2Bh%2BjEqUuuLB6fMmZUKlG%2FTwhlPR346olIC99B9x%2FenYTMV1crJL57j8ihuTOrjL4nDo6vJjZXWF3GCGAOpzUxhHlT96880zQHoCE0dmihXNdcE74SRO19ALWecVTZbOqc8nrMHnPuIrjGNikuylXFNt0fYXbxzOqZXj9AHoQIV4w%2BaMvGvVtKAw5lYajjhGoKJ9aANqCmyoWYLD87CeFh44Man%2FqzBjsKKeF5%2BQF&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190326T062722Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAYE2WB5AWIZOIJGWM%2F20190326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Signature=4e03ffb6fc165c4c4078d146f653883fd765c5179b715ecd1350cab10e1f7592',
+            image3: 'https://s3.us-west-1.amazonaws.com/kyle-payne-portfolio-photos/keyboard-hero-leaderboard.png?response-content-disposition=inline&X-Amz-Security-Token=FQoGZXIvYXdzEFAaDMme%2B2Z4MojIB9xp7SK4A1xXAoTk669rK7vfXCo6h%2BjFk%2Bfbd4zQlUopNHi%2FMM%2BK91UKAeaT1vPoxfg0H3cXGuQp9DDiGcr0DjSq%2Bq%2BhH1o%2FlX3laoNymU8PMuU2fQwfhgNr3IagarIdV0I50BZYiTvoVqFxBnQ4oePbKJVEw8UCUB35ugxHiP5YZ%2BO55StasUVGbd6PeOTwqjMzft4kp8vZRLfDgze%2B8gW2mvhowlxndMRmvnWIUPGLo1gbBd0onu8LjWOybvHq0JaA8Ur9hXQISEUVquJCNa69Fk%2Fitvk2jIrUkHJdGxef8GlWQOtyxCHGtxdSHkrVcnreP%2F9Xh8jjVNDopq0t9ZcFFGQjAuHXMk6%2BOC1Jjh%2B3PBXIFOAl%2Bh%2BjEqUuuLB6fMmZUKlG%2FTwhlPR346olIC99B9x%2FenYTMV1crJL57j8ihuTOrjL4nDo6vJjZXWF3GCGAOpzUxhHlT96880zQHoCE0dmihXNdcE74SRO19ALWecVTZbOqc8nrMHnPuIrjGNikuylXFNt0fYXbxzOqZXj9AHoQIV4w%2BaMvGvVtKAw5lYajjhGoKJ9aANqCmyoWYLD87CeFh44Man%2FqzBjsKKeF5%2BQF&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190326T062742Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAYE2WB5AWIZOIJGWM%2F20190326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Signature=de5e49dccce1fec275c0e7ca5fd56fe6009d0382f1753b98a162d3f03c1381ff',
+            image1description: 'Typing challenge provides real-time feedback on accuracy',
+            image2description: 'Once challenge is completed, user can see their typed Words Per Minute',
+            image3description: 'Database keeps track of leaderboard',
          }
       ],
       viewMilestoneImages: false,
       viewKanooImages: false,
+      viewKeyboardHeroImages: false,
    }
 
    render() {
@@ -66,7 +83,8 @@ export default class Projects extends Component {
          slidesToScroll: 1,
          fade: true
       };
-
+      
+      //PROJECT CARDS
       //Milestone Project Card
       const milestone = this.state.projects[0];
       const milestoneProject = (
@@ -187,6 +205,63 @@ export default class Projects extends Component {
          </div>
       )
 
+      //Keyboard Hero Project Card
+      const keyboardHero = this.state.projects[2];
+      const keyboardHeroProject = (
+         <div
+            class="project-card milestone-card"
+            style={{ backgroundImage: `url(${keyboardHero.mainPhoto})` }}
+         >
+            <div className='card-text'>
+               <div className='project-card-header'>
+                  <h2>{keyboardHero.name}</h2>
+                  <p onClick={() => this.setState({ viewKeyboardHeroImages: true })} style={{ color: 'salmon' }}>View Photos</p>
+                  <div className='small-link-container'> 
+                  {/* Only displays in mobile view */}
+                     <div>
+                        <a style={{ color: 'white' }} target='_blank' href={keyboardHero.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                        <div>
+                           <span>Username: {keyboardHero.username}</span>
+                           <span> | Password: {keyboardHero.password}</span>
+                        </div>
+                     </div>
+                     <div>
+                        <a style={{ color: 'white' }} target='_blank' href={keyboardHero.codeURL} rel="noopener noreferrer">View Code</a>
+                        <div>
+                           <span style={{ opacity: '0' }} > View Code </span>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+               <div>
+                  <ul>
+                     <li>{keyboardHero.keyPoint1}</li>
+                     <li>{keyboardHero.keyPoint2}</li>
+                     <li>{keyboardHero.keyPoint3}</li>
+                     {keyboardHero.keyPoint4 && <li>{keyboardHero.keyPoint4}</li>}
+                  </ul>
+                  <div className='technologies-list'>
+                     <h5>{keyboardHero.technologies}</h5>
+                  </div>
+                  <div className='link-container'>
+                     <div>
+                        <a style={{ color: 'white' }} target='_blank' href={keyboardHero.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                     </div>
+                     <div>
+                        <a style={{ color: 'white' }} target='_blank' href={keyboardHero.codeURL} rel="noopener noreferrer">View Code</a>
+                        <div>
+                           <span style={{ opacity: '0' }} > View Code </span>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      )
+
+      // MODALS
       //Milestone Modal
       let milestoneImagesModal = (
          <div className='modal-wrapper'>
@@ -244,7 +319,29 @@ export default class Projects extends Component {
             </div>
          </div>
       )
-
+      
+      //Keyboard Hero Modal
+      let keyboardHeroImagesModal = (
+         <div className='modal-wrapper'>
+            <i className="fas fa-times modal-back-button" onClick={() => this.setState({ viewKeyboardHeroImages: false })}></i>
+            <div>
+               <Slider {...settings} className='slider'>
+                  <div>
+                     <img src={keyboardHero.image1} alt="" className='screenshot' />
+                     <p>{keyboardHero.image1description}</p>
+                  </div>
+                  <div>
+                     <img src={keyboardHero.image2} alt="" className='screenshot' />
+                     <p>{keyboardHero.image2description}</p>
+                  </div>
+                  <div>
+                     <img src={keyboardHero.image3} alt="" className='screenshot' />
+                     <p>{keyboardHero.image3description}</p>
+                  </div>
+               </Slider>
+            </div>
+         </div>
+      )
 
       return (
          <div className='page projects-page-main'>
@@ -257,9 +354,11 @@ export default class Projects extends Component {
             <div className='projects-container'>
                {milestoneProject}
                {kanooProject}
+               {keyboardHeroProject}
             </div>
             {this.state.viewMilestoneImages && milestoneImagesModal}
             {this.state.viewKanooImages && kanooImagesModal}
+            {this.state.viewKeyboardHeroImages && keyboardHeroImagesModal}
          </div>
       )
    }
