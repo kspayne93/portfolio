@@ -355,9 +355,6 @@ export default class Projects extends Component {
                {milestoneProject}
                {kanooProject}
                {keyboardHeroProject}
-               {milestoneProject}
-               {kanooProject}
-               {keyboardHeroProject}
             </div>
             {this.state.viewMilestoneImages && milestoneImagesModal}
             {this.state.viewKanooImages && kanooImagesModal}
