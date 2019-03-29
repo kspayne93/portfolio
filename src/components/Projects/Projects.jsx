@@ -349,7 +349,7 @@ export default class Projects extends Component {
                <i className="fas fa-undo class back-button"></i>
             </Link>
             <h1 style={{ margin: '1rem' }} className='projects-text'>Projects</h1>
-            <h3 style={{ margin: '0px' }} className='hover-for-detail-text'>(Hover over picture for details)</h3>
+            <h3 style={{ marginBottom: '1rem', marginTop: '0' }} className='hover-for-detail-text'>(Hover over picture for details)</h3>
             <h3 style={{ margin: '0px' }} className='touch-for-detail-text'>(Touch picture for details)</h3>
             <div className='projects-container'>
                {milestoneProject}
