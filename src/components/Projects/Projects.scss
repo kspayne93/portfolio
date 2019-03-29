@@ -5,6 +5,10 @@
 	justify-content: center;
 	align-items: center;
 	overflow: scroll;
+
+	h3 {
+		margin-bottom: 1rem;
+	}
 }
 
 .projects-container {
@@ -18,7 +22,6 @@
 	align-items: center;
 	overflow: auto;
 }
-
 
 .project-card {
 	width: 600px;
@@ -105,6 +108,7 @@
 	}
 }
 
+
 .link-container {
 	width: 100%;
 	display: flex;
@@ -173,6 +177,8 @@
 .touch-for-detail-text {
 	display: none;
 }
+
+
 
 //MEDIA QUERIES
 @media (max-width: 415px) {
