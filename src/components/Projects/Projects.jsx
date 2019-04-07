@@ -55,7 +55,7 @@ export default class Projects extends Component {
             name: 'Keyboard Hero',
             keyPoint1: 'A typing challenge that tests a user`s speed and accuracy.',
             keyPoint2: `A fun full-stack web application which helps people improve their typing skills.`,
-            keyPoint3: `Uses javascript to check for user's typing accuracy in real-time`,
+            keyPoint3: `Uses Javascript to check for user's typing accuracy in real-time`,
             technologies: 'REACT | NODE | EXPRESS | MASSIVE | AXIOS | SASS | POSTGRESQL',
             liveSiteURL: 'https://www.keyboardhero.fun',
             codeURL: 'https://github.com/kspayne93/keyboard-hero',
