@@ -352,13 +352,13 @@ export default class Projects extends Component {
             <h3 style={{ marginBottom: '1rem', marginTop: '0' }} className='hover-for-detail-text'>(Hover over picture for details)</h3>
             <h3 style={{ margin: '0px' }} className='touch-for-detail-text'>(Touch picture for details)</h3>
             <div className='projects-container'>
-               {milestoneProject}
-               {kanooProject}
                {keyboardHeroProject}
+               {kanooProject}
+               {milestoneProject}
             </div>
-            {this.state.viewMilestoneImages && milestoneImagesModal}
-            {this.state.viewKanooImages && kanooImagesModal}
             {this.state.viewKeyboardHeroImages && keyboardHeroImagesModal}
+            {this.state.viewKanooImages && kanooImagesModal}
+            {this.state.viewMilestoneImages && milestoneImagesModal}
          </div>
       )
    }
