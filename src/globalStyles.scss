@@ -36,11 +36,13 @@ $background-image: url('../src//assets//images/brick-wall.jpg');
 	50% {
 		opacity: 1;
 		width: 70vw;
+		max-width: 900px;
 		height: 0vh;
 	}
 	100% {
 		opacity: 1;
 		width: 70vw;
+		max-width: 900px;
 		height: 80vh;
 	}
 }
