@@ -32,9 +32,6 @@
    animation-delay: .25s;
 	animation-fill-mode: forwards;
 	opacity: 0;
-	&:hover {
-		font-size: 2.6rem;
-	}
 }
 
 .skills-text {
@@ -42,13 +39,19 @@
 	color: #e100ff;
 	margin: 0;
 	font-family: neon;
+	&:hover {
+		text-shadow: 0 0 1vw #b007ff, 0 0 3vw #b007ff, 0 0 10vw #b007ff, 0 0 10vw #b007ff, 0 0 .4vw #cc00ff, .3vw .3vw .1vw #3c005f;
+	}
 }
 
 .projects-text {
-	text-shadow: 0 0 1vw #008b51, 0 0 3vw #008b51, 0 0 10vw #008b51, 0 0 10vw #008b51, 0 0 .4vw #bc0be9, .3vw .3vw .1vw #043127;
+	text-shadow: 0 0 1vw #008b51, 0 0 3vw #008b51, 0 0 10vw #008b51, 0 0 10vw #008b51, 0 0 .4vw #008b51, .3vw .3vw .1vw #043127;
 	color: #00ffdd;
 	margin: 0;
 	font-family: neon;
+	&:hover {
+		text-shadow: 0 0 1vw #03d47d, 0 0 3vw #03d47d, 0 0 10vw #03d47d, 0 0 10vw #03d47d, 0 0 .4vw #03d47d, .3vw .3vw .1vw #043127;
+	}
 }
 
 .about-title {
@@ -56,6 +59,9 @@
 	color: #f7fc00;
 	margin: 0;
 	font-family: neon;
+	&:hover {
+		text-shadow: 0 0 1vw #96a701, 0 0 3vw #96a701, 0 0 10vw #96a701, 0 0 15vw #96a701, 0 0 .4vw #96a701, .3vw .3vw .1vw #504400;
+	}
 }
 
 .contact-title {
@@ -63,6 +69,9 @@
 	color: #ff0000;
 	margin: 0;
 	font-family: neon;
+	&:hover {
+		text-shadow: 0 0 1vw #ec0101, 0 0 3vw #ec0101, 0 0 10vw #ec0101, 0 0 10vw #ec0101, 0 0 .4vw #ec0101, .3vw .3vw .1vw #500000;
+	}
 }
 
 //NEON ANIMATION

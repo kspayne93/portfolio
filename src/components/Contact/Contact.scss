@@ -20,7 +20,6 @@
 		}
 }
 
-
 .contact-container {
 	box-sizing: border-box;
 	border: 1px solid darkgray;
@@ -29,7 +28,7 @@
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-	animation: expand .5s linear;
+	animation: contact-expand .5s linear;
    animation-delay: .25s;
 	animation-fill-mode: forwards;
 	opacity: 0;
@@ -53,6 +52,27 @@
 
 .contact-icon {
 	font-size: 2rem;
+}
+
+// Animation
+@keyframes contact-expand {
+	0% {
+		opacity: 1;
+		width: 0vw;
+		height: 0vw;
+	}
+	50% {
+		opacity: 1;
+		width: 50vw;
+		max-width: 900px;
+		height: 0vh;
+	}
+	100% {
+		opacity: 1;
+		width: 50vw;
+		max-width: 900px;
+		height: 70vh;
+	}
 }
 
 //MEDIA QUERIES

@@ -9,25 +9,20 @@ export default class Projects extends Component {
    state = {
       projects: [
          {
-            name: 'Milestone',
-            keyPoint1: 'Full CRUD web app that allows users to keep track of significant events in their life',
-            keyPoint2: 'Won Best Design / Styling out of 18 projects',
-            keyPoint3: 'AWS S3 Integration allows users to upload photos & videos',
-            keyPoint4: 'Responsive design works on Mobile',
-            technologies: "REACT | REDUX | NODE | EXPRESS | MASSIVE | AXIOS | SASS | POSTGRESQL | BCRYPT | AMAZON S3 | SESSIONS",
-            liveSiteURL: 'https://www.milestone.page/#/',
-            username: 'milo',
-            password: 'milo',
-            codeURL: 'https://github.com/kspayne93/milestone',
-            mainPhoto: 'https://lh3.googleusercontent.com/4S86dAv46fA_NQMo6C1HABm64DUADvMcJL50fBexgfk10RBQd9275YhE_GyJQAnsx7-bZpgdwIEqG1pblJod38cUm8ESL3NgqyUVk19Xs9-x661JD0nBlL4-vP6ti8HhLKfMTEcro2TS5FIFpWomLu9tdOu4UzBKCmmPPnAkLQRNY3-uCq4ZIcSJByKvunfNJUQTvAU-KeEWEj4cjOO127XuaknNYO4HwlLylcT5xdahHhwH569ZtyNeZZYDs-scp9mltrq5UeB5_dDKe5t7ZjpZ9dSXRlNhGfXFbkFDRjcN4TjFhpZDQgy-hUgxp7miTmwzjuHVvZgZOIMgkuTKXopWBYPwPkX7_rj_gk0t5rToYEdqmdsQw7lrQ5_eIPt7z8USHzjNJ__zLGagUL-kT8-wwM79bpxBXPCQSGPT7v2l-gm57PBVeg9dPW9yIbPIUBjTphpYcnaT5Ws60-gVxB1fy0ZS-RYvOvREDaOuuAXy672Uj52W4e0DHECYmgoOQl5bkS9c8JFOD3KUZxrC4-DPrmSOIiVoI5OMVrlFIbLphA9XaI3hk-v8G9zy3kSERQXqlxf8eQjb7kZ8TIgGL1Qtvua6PvNiqWSleKrqPru20tf3yiFK9V45RgjGNyy6tOLej5UwKblDnnimqm4ANP0wNJuEGa6nUU_HHZqdIwTRhWOHYh0YxCHh9f85FFR2uelVwCLO7bopagj24wmzHD-qeg=w1667-h969-no',
-            image1: 'https://lh3.googleusercontent.com/4S86dAv46fA_NQMo6C1HABm64DUADvMcJL50fBexgfk10RBQd9275YhE_GyJQAnsx7-bZpgdwIEqG1pblJod38cUm8ESL3NgqyUVk19Xs9-x661JD0nBlL4-vP6ti8HhLKfMTEcro2TS5FIFpWomLu9tdOu4UzBKCmmPPnAkLQRNY3-uCq4ZIcSJByKvunfNJUQTvAU-KeEWEj4cjOO127XuaknNYO4HwlLylcT5xdahHhwH569ZtyNeZZYDs-scp9mltrq5UeB5_dDKe5t7ZjpZ9dSXRlNhGfXFbkFDRjcN4TjFhpZDQgy-hUgxp7miTmwzjuHVvZgZOIMgkuTKXopWBYPwPkX7_rj_gk0t5rToYEdqmdsQw7lrQ5_eIPt7z8USHzjNJ__zLGagUL-kT8-wwM79bpxBXPCQSGPT7v2l-gm57PBVeg9dPW9yIbPIUBjTphpYcnaT5Ws60-gVxB1fy0ZS-RYvOvREDaOuuAXy672Uj52W4e0DHECYmgoOQl5bkS9c8JFOD3KUZxrC4-DPrmSOIiVoI5OMVrlFIbLphA9XaI3hk-v8G9zy3kSERQXqlxf8eQjb7kZ8TIgGL1Qtvua6PvNiqWSleKrqPru20tf3yiFK9V45RgjGNyy6tOLej5UwKblDnnimqm4ANP0wNJuEGa6nUU_HHZqdIwTRhWOHYh0YxCHh9f85FFR2uelVwCLO7bopagj24wmzHD-qeg=w1667-h969-no',
-            image2: 'https://lh3.googleusercontent.com/RT3dknR2GBxS31R_RwrOd6eQInHlyj9ANy5q1pQtlGP9muCJ7v7H6NWTQ_WRXeD0nNoAABJ1iD0dzygAFDvI650hR0PfluLenR0ARx_2A4u9eI44P7Z1jMZkrq61ckHdR978UQm2jfp86uTHhunP6BDZMnY70qyHDklGGUJfAY0KnM01Lashn5m-oeWk-X7kdHwAiDWdqDlH_VVGmcRT5ZBOO8o4mdWDkNHe6Jx52GLGmo_Ubtuj_GufGXQogV6B-e7dTI6b_NUQa8dXrmsUvUnhH39UqhKdNvvznyPQViYYyGxieW8ilpIbdArRld3LQ5V3rkZE1paS8O1fh_X8VU0WSVbqIyfnATM-oBZG3jp0FX8x_oK3iEG1gWAd8JrnSVJSbTz2rzjXIott_-JcmayzGWO-qx1I_TBhoYllmpI2u9OaE-XI7dRLbhDM5xf6HQXRC_iRVb99FjRJ19qWDlQNlg2REE_bZtmCpfQciF4Ir-yyBLHWjxIa0PGDmyk3HROktkxGpP1_M1dzXBCZzCW6kN5Is0RNLKfgyZRl0PkhkXk8kT9ibv0v-RUXD0qpQraCWqB9qm2rUo70kxfyunayfCivxbC4FUj3zrsy-U9it7icPdyiEp8ZFM6bWMMXPmbJws3rE7OYWsUJkHBXC9L_V6H0buuV=w693-h380-no',
-            image3: 'https://lh3.googleusercontent.com/Ehqb4aq4eBBlw8dWdVW3gjpLTT9AYUFEL_dyFK4HHDIk-77lfU5JCUq7ts11mFD775ZTuRRJYB1nWHOV2RqkbDQgis0mojhCMkUDFU8nMzxDLNwzPDiChlnY_9y_86UxO8HI-JGfOqcd1BLF9hNQRjT9se6XxMXYqGgA70aDi5ZuVIArFannr9Zwm9Bft4tztZisy1ApXk7ZYdiDV9pH-Os8ppUtiQP_7aytP-fX8H_P4zK3dmLCEFUwWt7rymtBVb-oIQgFi659bAkemTkuq1TcrozYtY9qWtDvfa0hDQZsgAk4zrwjEskR0n3wmouAO-I9pjwG5hxIVpl3MGR3GomXSdTuRD-Nv07kY7jKUHbTM_OMM7qszHbbfDNVvIk3jYylnOvXSVOVxp5iNOH9xQ4GcCJq3ylaCX-pdSJYKRU-oG2pjWCruAH8BLmBznfneJvM_U-N32kwD6XZXtgWwDFBhx9NI2SIsIe-0dpu0amfYSLeaf4U0cEPgPY79EHfbd5G6u5r_VyvoRuHSvEAVyENvrXGiij5Yiv2Pie8IP5ZH6LXmJWNdK-iswblZHbVFVFhXs2Ml_6tG3S4M633Ig3gRnIe5CUwJ6GtP9h8KHT68jW-8UxYrEFPiTwXTGRWNmDUnwYqFl16lh4VYnOH5lQb-mycX23fVcLqVUKZCa0xSEv2sJwYQFxxD0WGi6UFkSqtCajXbz9IfLvBo6umKujl1w=w2880-h1574-no',
-            image4: 'https://lh3.googleusercontent.com/wyx_goNOQq5AQbHuUDg23l_j6srpyOclqCmBwE_eODZ7u5IpENguR7gd8Ff3gYa6K3oP6y2dovJhA8Wlrvh9zoess81cVJOYPdJGbVGtEPg8stDhkJO48GEBglEV44z6s-QOWwkL2R7EG2PLCrKLUYHGhPArz8-HpTrMD4-cpWKt3hzwESVUf3AFKpDyDTkdkfEvcjTMF7HiXs3ALipxSdcMqjBiDqYnYTORimesfUMn4-bK0C2X3FpPTTdSvGVlMZ7h7QqxJ8yqaiNCDEoL2r89ILrOvw4uaZQsU8RX26nNSDjuuHn94V-7azbYvioWHmPPyLjUnOUzOHF8Mt06Lz6Y9T5M6Paezfg8VHnIGxXTefdHlUFrUfg1DdowSBLY_q0kd1tFf8dX-rnbMoCRliR7VE07aJW16xMdOgyyJwyzsgBKmA_zp1Yp-xcfhVtLOFNzMAQ-dmO6AmbvsDnJfxsfb_wlZTfnwtCmTP6YLeE0n4gxf8VEX9n3CDjtwgSoylM9cGIWmKpy0HAJLM0fN53BHVf43UOoZd7Jcudae4_zF35Z-0KMwJF9E3UjkEaShRCi6M5GUD1MbO3a6QGiM-S8B7r8Vc7pwov-cJAsz8ZssFCmij40P_4x11BpzOISThKOQemeahYGKj4b4s90O9hVn0jn5lMWaMn6EQH5H5rRX1Ky58gTXFI6-0a2Ki4nPfg0sRr8VEoi948k8eaFklXFaw=w2652-h1440-no',
-            image1description: 'Landing Page',
-            image2description: `Dashboard View showing user's milestones`,
-            image3description: 'Edit Milestone Modal',
-            image4description: 'Search Functionality',
+            name: 'Keyboard Hero',
+            keyPoint1: 'A typing challenge that tests a user`s speed and accuracy.',
+            keyPoint2: `A fun full-stack web application which helps people improve their typing skills.`,
+            keyPoint3: `Uses Javascript to check for user's typing accuracy in real-time`,
+            technologies: 'REACT | NODE | EXPRESS | MASSIVE | AXIOS | SASS | POSTGRESQL',
+            liveSiteURL: 'https://www.keyboardhero.fun',
+            codeURL: 'https://github.com/kspayne93/keyboard-hero',
+            mainPhoto: 'https://i.imgur.com/2Adc63S.png',
+            image1: 'https://i.imgur.com/I2VLG3Q.png',
+            image2: 'https://i.imgur.com/aSXaqEi.png',
+            image3: 'https://i.imgur.com/axgXtrD.png',
+            image1description: 'Typing challenge provides real-time feedback on accuracy',
+            image2description: 'Once challenge is completed, user can see their typed Words Per Minute',
+            image3description: 'Database keeps track of leaderboard',
          },
          {
             name: 'Kanoo',
@@ -51,26 +46,9 @@ export default class Projects extends Component {
             image4description: 'Trip Details View (user can update budget, take notes (text editor made with Quill), add destinations, add activities, add travelers). All travelers who are assigned to this trip can edit and collaberate.',
             image5description: 'Bucket List View'
          },
-         {
-            name: 'Keyboard Hero',
-            keyPoint1: 'A typing challenge that tests a user`s speed and accuracy.',
-            keyPoint2: `A fun full-stack web application which helps people improve their typing skills.`,
-            keyPoint3: `Uses Javascript to check for user's typing accuracy in real-time`,
-            technologies: 'REACT | NODE | EXPRESS | MASSIVE | AXIOS | SASS | POSTGRESQL',
-            liveSiteURL: 'https://www.keyboardhero.fun',
-            codeURL: 'https://github.com/kspayne93/keyboard-hero',
-            mainPhoto: 'https://i.imgur.com/2Adc63S.png',
-            image1: 'https://i.imgur.com/I2VLG3Q.png',
-            image2: 'https://i.imgur.com/aSXaqEi.png',
-            image3: 'https://i.imgur.com/axgXtrD.png',
-            image1description: 'Typing challenge provides real-time feedback on accuracy',
-            image2description: 'Once challenge is completed, user can see their typed Words Per Minute',
-            image3description: 'Database keeps track of leaderboard',
-         }
       ],
-      viewMilestoneImages: false,
-      viewKanooImages: false,
-      viewKeyboardHeroImages: false,
+      displayKeyboardHeroImages: false,
+      displayKanooImages: false,
    }
 
    render() {
@@ -85,137 +63,17 @@ export default class Projects extends Component {
       };
       
       //PROJECT CARDS
-      //Milestone Project Card
-      const milestone = this.state.projects[0];
-      const milestoneProject = (
-         <div
-            class="project-card milestone-card"
-            style={{ backgroundImage: `url(${milestone.mainPhoto})` }}
-         >
-            <div className='card-text'>
-               <div className='project-card-header'>
-                  <h2>{milestone.name}</h2>
-                  <p onClick={() => this.setState({ viewMilestoneImages: true })} style={{ color: 'salmon' }}>View Photos</p>
-                  <div className='small-link-container'> 
-                  {/* Only displays in mobile view */}
-                     <div>
-                        <a style={{ color: 'white' }} target='_blank' href={milestone.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
-                        <div>
-                           <span>Username: {milestone.username}</span>
-                           <span> | Password: {milestone.password}</span>
-                        </div>
-                     </div>
-                     <div>
-                        <a style={{ color: 'white' }} target='_blank' href={milestone.codeURL} rel="noopener noreferrer">View Code</a>
-                        <div>
-                           <span style={{ opacity: '0' }} > View Code </span>
-                        </div>
-                     </div>
-
-                  </div>
-               </div>
-               <div>
-                  <ul>
-                     <li>{milestone.keyPoint1}</li>
-                     <li>{milestone.keyPoint2}</li>
-                     <li>{milestone.keyPoint3}</li>
-                     {milestone.keyPoint4 && <li>{milestone.keyPoint4}</li>}
-                  </ul>
-                  <div className='technologies-list'>
-                     <h5>{milestone.technologies}</h5>
-                  </div>
-                  <div className='link-container'>
-                     <div>
-                        <a style={{ color: 'white' }} target='_blank' href={milestone.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
-                        <div>
-                           <span>Username: {milestone.username}</span>
-                           <span> | Password: {milestone.password}</span>
-                        </div>
-                     </div>
-                     <div>
-                        <a style={{ color: 'white' }} target='_blank' href={milestone.codeURL} rel="noopener noreferrer">View Code</a>
-                        <div>
-                           <span style={{ opacity: '0' }} > View Code </span>
-                        </div>
-                     </div>
-
-                  </div>
-               </div>
-            </div>
-         </div>
-      )
-
-      //Kanoo Project Card
-      const kanoo = this.state.projects[1];
-      const kanooProject = (
-         <div
-            class="project-card milestone-card"
-            style={{ backgroundImage: `url(${kanoo.mainPhoto})` }}
-         >
-            <div className='card-text'>
-               <div className='project-card-header'>
-                  <h2>{kanoo.name}</h2>
-                  <p onClick={() => this.setState({ viewKanooImages: true })} style={{ color: 'salmon' }}>View Photos</p>
-                  <div className='small-link-container'>
-                  {/* Only displays in mobile view */}
-                     <div>
-                        <a style={{ color: 'white' }} target='_blank' href={kanoo.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
-                        <div>
-                           <span>Username: {kanoo.username}</span>
-                           <span> | Password: {kanoo.password}</span>
-                        </div>
-                     </div>
-                     <div>
-                        <a style={{ color: 'white' }} target='_blank' href={kanoo.codeURL} rel="noopener noreferrer">View Code</a>
-                        <div>
-                           <span style={{ opacity: '0' }} > View Code </span>
-                        </div>
-                     </div>
-
-                  </div>
-               </div>
-               <div>
-                  <ul>
-                     <li>{kanoo.keyPoint1}</li>
-                     <li>{kanoo.keyPoint2}</li>
-                     <li>{kanoo.keyPoint3}</li>
-                     {kanoo.keyPoint4 && <li>{kanoo.keyPoint4}</li>}
-                  </ul>
-                  <div className='technologies-list' style={{ textAlign: 'center' }}>
-                     <h5>{kanoo.technologies}</h5>
-                  </div>
-                  <div className='link-container'>
-                     <div>
-                        <a style={{ color: 'white' }} target='_blank' href={kanoo.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
-                        <div>
-                           <span>Username: {kanoo.username}</span>
-                           <span> | Password: {kanoo.password}</span>
-                        </div>
-                     </div>
-                     <div>
-                        <a style={{ color: 'white' }} target='_blank' href={kanoo.codeURL} rel="noopener noreferrer">View Code</a>
-                        <div>
-                           <span style={{ opacity: '0' }} > View Code </span>
-                        </div>
-                     </div>
-
-                  </div>
-               </div>
-            </div>
-         </div>
-      )
-
       //Keyboard Hero Project Card
-      const keyboardHero = this.state.projects[2];
+      const keyboardHero = this.state.projects[0];
       const keyboardHeroProject = (
          <div
-            class="project-card milestone-card"
+            className="project-card milestone-card"
             style={{ backgroundImage: `url(${keyboardHero.mainPhoto})` }}
          >
             <div className='card-text'>
                <div className='project-card-header'>
                   <h2>{keyboardHero.name}</h2>
-                  <p onClick={() => this.setState({ viewKeyboardHeroImages: true })} style={{ color: 'salmon' }}>View Photos</p>
+                  <p onClick={() => this.setState({ displayKeyboardHeroImages: true })} style={{ color: 'salmon' }}>View Photos</p>
                   <div className='small-link-container'> 
                   {/* Only displays in mobile view */}
                      <div>
@@ -251,10 +109,68 @@ export default class Projects extends Component {
                      <div>
                         <a style={{ color: 'white' }} target='_blank' href={keyboardHero.codeURL} rel="noopener noreferrer">View Code</a>
                         <div>
-                           <span style={{ opacity: '0' }} > View Code </span>
+                           <span style={{ opacity: '0' }}>View Code</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      )
+
+      //Kanoo Project Card
+      const kanoo = this.state.projects[1];
+      const kanooProject = (
+         <div
+            className="project-card milestone-card"
+            style={{ backgroundImage: `url(${kanoo.mainPhoto})` }}
+         >
+            <div className='card-text'>
+               <div className='project-card-header'>
+                  <h2>{kanoo.name}</h2>
+                  <p onClick={() => this.setState({ displayKanooImages: true })} style={{ color: 'salmon' }}>View Photos</p>
+                  <div className='small-link-container'>
+                  {/* Only displays in mobile view */}
+                     <div>
+                        <a style={{ color: 'white' }} target='_blank' href={kanoo.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                        <div>
+                           <span>Username: {kanoo.username}</span>
+                           <span> | Password: {kanoo.password}</span>
+                        </div>
+                     </div>
+                     <div>
+                        <a style={{ color: 'white' }} target='_blank' href={kanoo.codeURL} rel="noopener noreferrer">View Code</a>
+                        <div>
+                           <span style={{ opacity: '0' }}>View Code</span>
                         </div>
                      </div>
 
+                  </div>
+               </div>
+               <div>
+                  <ul>
+                     <li>{kanoo.keyPoint1}</li>
+                     <li>{kanoo.keyPoint2}</li>
+                     <li>{kanoo.keyPoint3}</li>
+                     {kanoo.keyPoint4 && <li>{kanoo.keyPoint4}</li>}
+                  </ul>
+                  <div className='technologies-list' style={{ textAlign: 'center' }}>
+                     <h5>{kanoo.technologies}</h5>
+                  </div>
+                  <div className='link-container'>
+                     <div>
+                        <a style={{ color: 'white' }} target='_blank' href={kanoo.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                        <div>
+                           <span>Username: {kanoo.username}</span>
+                           <span> | Password: {kanoo.password}</span>
+                        </div>
+                     </div>
+                     <div>
+                        <a style={{ color: 'white' }} target='_blank' href={kanoo.codeURL} rel="noopener noreferrer">View Code</a>
+                        <div>
+                           <span style={{ opacity: '0' }} > View Code </span>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -262,27 +178,23 @@ export default class Projects extends Component {
       )
 
       // MODALS
-      //Milestone Modal
-      let milestoneImagesModal = (
-         <div className='modal-wrapper'>
-            <i className="fas fa-times modal-back-button" onClick={() => this.setState({ viewMilestoneImages: false })}></i>
-            <div>
+      //Keyboard Hero Modal
+      let keyboardHeroImagesModal = (
+         <div className='modal-wrapper' onClick={() => this.setState({ displayKeyboardHeroImages: false })}>
+            <i className="fas fa-times modal-back-button" onClick={() => this.setState({ displayKeyboardHeroImages: false })}></i>
+            <div onClick={event => event.stopPropagation()}>
                <Slider {...settings} className='slider'>
                   <div>
-                     <img src={milestone.image1} alt="" className='screenshot' />
-                     <p>{milestone.image1description}</p>
+                     <img src={keyboardHero.image1} alt="" className='screenshot' />
+                     <p>{keyboardHero.image1description}</p>
                   </div>
                   <div>
-                     <img src={milestone.image2} alt="" className='screenshot' />
-                     <p>{milestone.image2description}</p>
+                     <img src={keyboardHero.image2} alt="" className='screenshot' />
+                     <p>{keyboardHero.image2description}</p>
                   </div>
                   <div>
-                     <img src={milestone.image3} alt="" className='screenshot' />
-                     <p>{milestone.image3description}</p>
-                  </div>
-                  <div>
-                     <img src={milestone.image4} alt="" className='screenshot' />
-                     <p>{milestone.image4description}</p>
+                     <img src={keyboardHero.image3} alt="" className='screenshot' />
+                     <p>{keyboardHero.image3description}</p>
                   </div>
                </Slider>
             </div>
@@ -291,9 +203,9 @@ export default class Projects extends Component {
       
       //Kanoo Modal
       let kanooImagesModal = (
-         <div className='modal-wrapper'>
-            <i className="fas fa-times modal-back-button" onClick={() => this.setState({ viewKanooImages: false })}></i>
-            <div>
+         <div className='modal-wrapper' onClick={() => this.setState({ displayKanooImages: false })}>
+            <i className="fas fa-times modal-back-button" onClick={() => this.setState({ displayKanooImages: false })}></i>
+            <div onClick={e => e.stopPropagation()}>
                <Slider {...settings} className='slider'>
                   <div>
                      <img src={kanoo.image1} alt="" />
@@ -319,46 +231,24 @@ export default class Projects extends Component {
             </div>
          </div>
       )
-      
-      //Keyboard Hero Modal
-      let keyboardHeroImagesModal = (
-         <div className='modal-wrapper'>
-            <i className="fas fa-times modal-back-button" onClick={() => this.setState({ viewKeyboardHeroImages: false })}></i>
-            <div>
-               <Slider {...settings} className='slider'>
-                  <div>
-                     <img src={keyboardHero.image1} alt="" className='screenshot' />
-                     <p>{keyboardHero.image1description}</p>
-                  </div>
-                  <div>
-                     <img src={keyboardHero.image2} alt="" className='screenshot' />
-                     <p>{keyboardHero.image2description}</p>
-                  </div>
-                  <div>
-                     <img src={keyboardHero.image3} alt="" className='screenshot' />
-                     <p>{keyboardHero.image3description}</p>
-                  </div>
-               </Slider>
-            </div>
-         </div>
-      )
 
       return (
-         <div className='page projects-page-main'>
-            <Link to='/' className='link'>
-               <i className="fas fa-undo class back-button"></i>
-            </Link>
-            <h1 style={{ margin: '1rem' }} className='projects-text'>Projects</h1>
-            <h3 style={{ marginBottom: '1rem', marginTop: '0' }} className='hover-for-detail-text'>(Hover over picture for details)</h3>
-            <h3 style={{ margin: '0px' }} className='touch-for-detail-text'>(Touch picture for details)</h3>
-            <div className='projects-container'>
-               {keyboardHeroProject}
-               {kanooProject}
-               {milestoneProject}
+         <div>
+
+               <Link to='/' className='link'>
+                  <i className="fas fa-undo class back-button"></i>
+               </Link>
+            <div className='page projects-page-main'>
+               <h1 style={{ margin: '1rem' }} className='projects-text'>Projects</h1>
+               <h3 style={{ marginBottom: '1rem', marginTop: '0' }} className='hover-for-detail-text'>(Hover over picture for details)</h3>
+               <h3 style={{ margin: '0px' }} className='touch-for-detail-text'>(Touch picture for details)</h3>
+               <div className='projects-container'>
+                  {keyboardHeroProject}
+                  {kanooProject}
+               </div>
+               {this.state.displayKeyboardHeroImages && keyboardHeroImagesModal}
+               {this.state.displayKanooImages && kanooImagesModal}
             </div>
-            {this.state.viewKeyboardHeroImages && keyboardHeroImagesModal}
-            {this.state.viewKanooImages && kanooImagesModal}
-            {this.state.viewMilestoneImages && milestoneImagesModal}
          </div>
       )
    }
