@@ -1,11 +1,14 @@
 @import './globalStyles.scss';
 
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   box-sizing: border-box;
   background: $background-image;
   background-size: cover;
-  // background-position: center;
   background-repeat: none;
   color: $primary-text-color;
 }

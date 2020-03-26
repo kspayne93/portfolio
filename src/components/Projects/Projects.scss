@@ -1,18 +1,18 @@
 .projects-page-main {
 	width: 100vw;
 	height: 100vh;
+	padding: 2rem;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
+	flex-wrap: nowrap;
 	overflow: scroll;
 }
 
 .projects-container {
 	width: 100%;
 	height: 95vh;
-	display: flex;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -22,63 +22,64 @@
 }
 
 .project-card {
-	width: 600px;
-	height: 370px;
+	width: 700px;
+	height: 450px;
+	margin: 2rem;
 	border-radius: 18px;
-	border: 1px solid black;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: nowrap;
 	background-position: center;
 	background-size: cover;
-	animation: fadeIn .33s linear;
+	animation: fadeIn .25s linear;
 	animation-delay: .2s;
 	animation-fill-mode: forwards;
 	opacity: 0;
 	z-index: 1;
-	margin: 2rem;
-
-	.project-card-header {
-		margin-top: 1rem;
-	}
-
-	card-text {
-		opacity: 0;
-		transition: .25s;
-		z-index: 0;
-	}
-
-	div {
+	
+	.card-text, div, p, a {
 		opacity: 0;
 		z-index: 0;
 	}
 
-	p {
-		z-index: 0;
-	}
-
-	a {
-		z-index: 0;
+	.card-text {
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
 	}
 
 	&:hover {
 		.card-text {
-			width: 600px;
-			height: 370px;
-			border-radius: 18px;
-			border: 1px solid black;
-			overflow: hidden;
-			background-color: rgba(0, 0, 0, 0.795);
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.884);
 			opacity: 1;
 			transition: .25s;
 			z-index: 2;
 
+			div, p, a {
+				opacity: 1;
+				z-index: 2;
+			}
+
+			div {
+				ul {
+					text-align: left;
+		
+					li {
+						margin-top: 1rem;
+					}
+				}
+			}
+
 			h2 {
 				text-transform: uppercase;
-				margin: .25rem;
+				margin: 0;
 			}
 
 			p {
@@ -87,23 +88,6 @@
 
 				&:hover {
 					cursor: pointer;
-				}
-			}
-		}
-
-		a {
-			z-index: 2;
-		}
-
-		div {
-			opacity: 1;
-			z-index: 2;
-
-			ul {
-				text-align: left;
-
-				li {
-					margin-top: 1rem;
 				}
 			}
 		}
@@ -127,6 +111,8 @@
 .technologies-list {
 	margin: 2rem 0;
 	color: salmon;
+	// color: #0bd4ba;
+	text-align: center;
 }
 
 .modal-wrapper {
@@ -206,9 +192,6 @@
 
 	.small-link-container {
 		display: block;
-		div {
-			margin: 1rem 0;
-		}
 	}
 }
 

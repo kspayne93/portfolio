@@ -16,8 +16,8 @@ $background-image: url('../src//assets//images/brick-wall.jpg');
 	top: 2rem;
 	left: 2rem;
    transition: .1s;
-   text-shadow: 0 0 1vw #b1b1b1, 0 0 3vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 .4vw #b1b1b1, .3vw .3vw .1vw #444141;
    color: #ffffff;
+   text-shadow: 0 0 1vw #b1b1b1, 0 0 3vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 .4vw #b1b1b1, .3vw .3vw .1vw #444141;
 	margin: 0;
       &:hover {
          text-shadow: 0 0 1vw #ffffff, 0 0 3vw #ffffff, 0 0 10vw #ffffff, 0 0 10vw #ffffff, 0 0 .4vw #ffffff, .3vw .3vw .1vw #444141;

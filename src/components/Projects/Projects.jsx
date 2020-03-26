@@ -13,7 +13,7 @@ export default class Projects extends Component {
             keyPoint1: 'A typing challenge that tests a user`s speed and accuracy.',
             keyPoint2: `A fun full-stack web application which helps people improve their typing skills.`,
             keyPoint3: `Uses Javascript to check for user's typing accuracy in real-time`,
-            technologies: 'REACT | NODE | EXPRESS | MASSIVE | AXIOS | SASS | POSTGRESQL',
+            technologies: 'REACT | NODE | EXPRESS | POSTGRESQL',
             liveSiteURL: 'https://www.keyboardhero.fun',
             codeURL: 'https://github.com/kspayne93/keyboard-hero',
             mainPhoto: 'https://i.imgur.com/2Adc63S.png',
@@ -29,7 +29,7 @@ export default class Projects extends Component {
             keyPoint1: 'An all-in-one travel planning app that enables users to collaborate with friends to plan upcoming trips. Developed in a group of 4',
             keyPoint2: `Keeps track of destinations, budget, activities, travelers (friends), and trip notes, as well as as a user's bucket list`,
             keyPoint3: `Built with a focus on design, the end result is a simple yet intuitive user experience that displays a user's travel details all in one place`,
-            technologies: 'REACT | REDUX | NODE | EXPRESS | MASSIVE | AXIOS | SASS | POSTGRESQL | BCRYPT | SESSIONS | QUILL',
+            technologies: 'REACT | REDUX | NODE | EXPRESS | POSTGRESQL',
             liveSiteURL: 'https://kanoo.fun/#/',
             username: 'k',
             password: 'k',
@@ -73,18 +73,18 @@ export default class Projects extends Component {
             <div className='card-text'>
                <div className='project-card-header'>
                   <h2>{keyboardHero.name}</h2>
-                  <p onClick={() => this.setState({ displayKeyboardHeroImages: true })} style={{ color: 'salmon' }}>View Photos</p>
+                  <p onClick={() => this.setState({ displayKeyboardHeroImages: true })} style={{ color: '#0bd4ba' }}>View Photos</p>
                   <div className='small-link-container'> 
                   {/* Only displays in mobile view */}
                      <div>
-                        <a style={{ color: 'white' }} target='_blank' href={keyboardHero.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={keyboardHero.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
                         <div>
                            <span>Username: {keyboardHero.username}</span>
                            <span> | Password: {keyboardHero.password}</span>
                         </div>
                      </div>
                      <div>
-                        <a style={{ color: 'white' }} target='_blank' href={keyboardHero.codeURL} rel="noopener noreferrer">View Code</a>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={keyboardHero.codeURL} rel="noopener noreferrer">View Code</a>
                         <div>
                            <span style={{ opacity: '0' }} > View Code </span>
                         </div>
@@ -104,10 +104,10 @@ export default class Projects extends Component {
                   </div>
                   <div className='link-container'>
                      <div>
-                        <a style={{ color: 'white' }} target='_blank' href={keyboardHero.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={keyboardHero.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
                      </div>
                      <div>
-                        <a style={{ color: 'white' }} target='_blank' href={keyboardHero.codeURL} rel="noopener noreferrer">View Code</a>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={keyboardHero.codeURL} rel="noopener noreferrer">View Code</a>
                         <div>
                            <span style={{ opacity: '0' }}>View Code</span>
                         </div>
@@ -121,25 +121,22 @@ export default class Projects extends Component {
       //Kanoo Project Card
       const kanoo = this.state.projects[1];
       const kanooProject = (
-         <div
-            className="project-card milestone-card"
-            style={{ backgroundImage: `url(${kanoo.mainPhoto})` }}
-         >
+         <div className="project-card milestone-card" style={{ backgroundImage: `url(${kanoo.mainPhoto})` }}>
             <div className='card-text'>
                <div className='project-card-header'>
                   <h2>{kanoo.name}</h2>
-                  <p onClick={() => this.setState({ displayKanooImages: true })} style={{ color: 'salmon' }}>View Photos</p>
+                  <p onClick={() => this.setState({ displayKanooImages: true })} style={{ color: '#0bd4ba' }}>View Photos</p>
                   <div className='small-link-container'>
                   {/* Only displays in mobile view */}
                      <div>
-                        <a style={{ color: 'white' }} target='_blank' href={kanoo.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={kanoo.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
                         <div>
                            <span>Username: {kanoo.username}</span>
                            <span> | Password: {kanoo.password}</span>
                         </div>
                      </div>
                      <div>
-                        <a style={{ color: 'white' }} target='_blank' href={kanoo.codeURL} rel="noopener noreferrer">View Code</a>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={kanoo.codeURL} rel="noopener noreferrer">View Code</a>
                         <div>
                            <span style={{ opacity: '0' }}>View Code</span>
                         </div>
@@ -152,21 +149,21 @@ export default class Projects extends Component {
                      <li>{kanoo.keyPoint1}</li>
                      <li>{kanoo.keyPoint2}</li>
                      <li>{kanoo.keyPoint3}</li>
-                     {kanoo.keyPoint4 && <li>{kanoo.keyPoint4}</li>}
+                     { kanoo.keyPoint4 && <li>{kanoo.keyPoint4}</li> }
                   </ul>
-                  <div className='technologies-list' style={{ textAlign: 'center' }}>
+                  <div className='technologies-list'>
                      <h5>{kanoo.technologies}</h5>
                   </div>
                   <div className='link-container'>
                      <div>
-                        <a style={{ color: 'white' }} target='_blank' href={kanoo.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={kanoo.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
                         <div>
                            <span>Username: {kanoo.username}</span>
                            <span> | Password: {kanoo.password}</span>
                         </div>
                      </div>
                      <div>
-                        <a style={{ color: 'white' }} target='_blank' href={kanoo.codeURL} rel="noopener noreferrer">View Code</a>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={kanoo.codeURL} rel="noopener noreferrer">View Code</a>
                         <div>
                            <span style={{ opacity: '0' }} > View Code </span>
                         </div>
@@ -234,14 +231,13 @@ export default class Projects extends Component {
 
       return (
          <div>
-
-               <Link to='/' className='link'>
-                  <i className="fas fa-undo class back-button"></i>
-               </Link>
+            <Link to='/' className='link'>
+               <i className="fas fa-undo class back-button"></i>
+            </Link>
             <div className='page projects-page-main'>
-               <h1 style={{ margin: '1rem' }} className='projects-text'>Projects</h1>
-               <h3 style={{ marginBottom: '1rem', marginTop: '0' }} className='hover-for-detail-text'>(Hover over picture for details)</h3>
-               <h3 style={{ margin: '0px' }} className='touch-for-detail-text'>(Touch picture for details)</h3>
+               <h1 className='projects-text'>Projects</h1>
+               <h3 className='hover-for-detail-text'>(Hover over picture for details)</h3>
+               <h3 className='touch-for-detail-text'>(Touch picture for details)</h3>
                <div className='projects-container'>
                   {keyboardHeroProject}
                   {kanooProject}
