@@ -40,7 +40,7 @@ export default function Skills() {
          <Link to='/' className='link'>
             <i className="fas fa-undo class back-button"></i>
          </Link>
-         <h1 className='skills-text'>Skills</h1>
+         <h1 className='skills-title'>Skills</h1>
          <div className='skills-container'>
             <div className='skill-container skill-1'>
                {htmlIcon}

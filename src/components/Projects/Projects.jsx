@@ -235,7 +235,7 @@ export default class Projects extends Component {
                <i className="fas fa-undo class back-button"></i>
             </Link>
             <div className='page projects-page-main'>
-               <h1 className='projects-text'>Projects</h1>
+               <h1 className='projects-title'>Projects</h1>
                <h3 className='hover-for-detail-text'>(Hover over picture for details)</h3>
                <h3 className='touch-for-detail-text'>(Touch picture for details)</h3>
                <div className='projects-container'>

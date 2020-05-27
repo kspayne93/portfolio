@@ -5,6 +5,13 @@
    align-items: center;
    overflow: hidden;
    padding: 2rem;
+
+   .skills-title {
+      margin: 0;
+      font-family: neon;
+      color: #e100ff;
+      text-shadow: 0 0 1vw #b007ff, 0 0 3vw #b007ff, 0 0 10vw #b007ff, 0 0 10vw #b007ff, 0 0 .4vw #cc00ff, .3vw .3vw .1vw #3c005f;
+   }
 }
 
 .skills-container {
@@ -16,78 +23,79 @@
    justify-content: space-around;
    align-items: center;
    align-content: space-around;
-}
 
-.skill-container {
-   height: 12rem;
-   width: 12rem;
-
-   p {
-      font-size: 20px;
+   .skill-container {
+      height: 12rem;
+      width: 12rem;
+   
+      p {
+         font-size: 20px;
+      }
+   
+      text-align: center;
    }
 
-   text-align: center;
-}
-
-.skill-icon {
-   width: 100%;
-   height: 100%;
-}
-
-.skill-1 {
-   animation: fadeIn .75s linear;
-   animation-delay: .5s;
-   animation-fill-mode: forwards;
-   opacity: 0;
-}
-
-.skill-2 {
-   animation: fadeIn .75s linear;
-   animation-delay: 2s;
-   animation-fill-mode: forwards;
-   opacity: 0;
-}
-
-.skill-3 {
-   animation: fadeIn .75s linear;
-   animation-delay: 1s;
-   animation-fill-mode: forwards;
-   opacity: 0;
-}
-
-.skill-4 {
-   animation: fadeIn .75s linear;
-   animation-delay: 1.5s;
-   animation-fill-mode: forwards;
-   opacity: 0;
-}
-
-.skill-5 {
-   animation: fadeIn .75s linear;
-   animation-delay: 2.25s;
-   animation-fill-mode: forwards;
-   opacity: 0;
-}
-
-.skill-6 {
-   animation: fadeIn .75s linear;
-   animation-delay: .75s;
-   animation-fill-mode: forwards;
-   opacity: 0;
-}
-
-.skill-7 {
-   animation: fadeIn .75s linear;
-   animation-delay: 1.75s;
-   animation-fill-mode: forwards;
-   opacity: 0;
-}
-
-.skill-8 {
-   animation: fadeIn .75s linear;
-   animation-delay: 1.25s;
-   animation-fill-mode: forwards;
-   opacity: 0;
+   .skill-icon {
+      width: 100%;
+      height: 100%;
+   }
+   
+   .skill-1 {
+      animation: fadeIn .75s linear;
+      animation-delay: .5s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+   }
+   
+   .skill-2 {
+      animation: fadeIn .75s linear;
+      animation-delay: 2s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+   }
+   
+   .skill-3 {
+      animation: fadeIn .75s linear;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+   }
+   
+   .skill-4 {
+      animation: fadeIn .75s linear;
+      animation-delay: 1.5s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+   }
+   
+   .skill-5 {
+      animation: fadeIn .75s linear;
+      animation-delay: 2.25s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+   }
+   
+   .skill-6 {
+      animation: fadeIn .75s linear;
+      animation-delay: .75s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+   }
+   
+   .skill-7 {
+      animation: fadeIn .75s linear;
+      animation-delay: 1.75s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+   }
+   
+   .skill-8 {
+      animation: fadeIn .75s linear;
+      animation-delay: 1.25s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+   }
+   
 }
 
 .and-more-text {
@@ -97,6 +105,7 @@
    opacity: 0;
    margin-top: 2em;
 }
+
 
 //MEDIA QUERIES
 //Mobile Resolution

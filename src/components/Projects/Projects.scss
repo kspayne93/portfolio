@@ -10,6 +10,13 @@
 	overflow: scroll;
 }
 
+.projects-title {
+	margin: 0;
+	font-family: neon;
+	color: #00ffdd;
+	text-shadow: 0 0 1vw #03d47d, 0 0 3vw #03d47d, 0 0 10vw #03d47d, 0 0 10vw #03d47d, 0 0 .4vw #03d47d, .3vw .3vw .1vw #043127;
+}
+
 .projects-container {
 	width: 100%;
 	height: 95vh;
