@@ -13,13 +13,9 @@ export default class Projects extends Component {
             keyPoint1: 'A typing challenge that tests a user`s speed and accuracy.',
             keyPoint2: `A fun full-stack web application which helps people improve their typing skills.`,
             keyPoint3: `Uses Javascript to check for user's typing accuracy in real-time`,
-            technologies: 'REACT | NODE | EXPRESS | POSTGRESQL',
+            technologies: 'REACT | NODE | POSTGRESQL',
             liveSiteURL: 'https://www.keyboardhero.fun',
             codeURL: 'https://github.com/kspayne93/keyboard-hero',
-            mainPhoto: 'https://i.imgur.com/2Adc63S.png',
-            image1: 'https://i.imgur.com/I2VLG3Q.png',
-            image2: 'https://i.imgur.com/aSXaqEi.png',
-            image3: 'https://i.imgur.com/axgXtrD.png',
             image1description: 'Typing challenge provides real-time feedback on accuracy',
             image2description: 'Once challenge is completed, user can see their typed Words Per Minute',
             image3description: 'Database keeps track of leaderboard',
@@ -29,7 +25,7 @@ export default class Projects extends Component {
             keyPoint1: 'An all-in-one travel planning app that enables users to collaborate with friends to plan upcoming trips. Developed in a group of 4',
             keyPoint2: `Keeps track of destinations, budget, activities, travelers (friends), and trip notes, as well as as a user's bucket list`,
             keyPoint3: `Built with a focus on design, the end result is a simple yet intuitive user experience that displays a user's travel details all in one place`,
-            technologies: 'REACT | REDUX | NODE | EXPRESS | POSTGRESQL',
+            technologies: 'REACT | NODE | POSTGRESQL',
             liveSiteURL: 'https://kanoo.fun/#/',
             username: 'k',
             password: 'k',
@@ -67,8 +63,8 @@ export default class Projects extends Component {
       const keyboardHero = this.state.projects[0];
       const keyboardHeroProject = (
          <div
-            className="project-card milestone-card"
-            style={{ backgroundImage: `url(${keyboardHero.mainPhoto})` }}
+            className="project-card"
+            style={{ backgroundImage: `url(${require('../../assets/images/keyboard-hero-landing.png')})`}}
          >
             <div className='card-text'>
                <div className='project-card-header'>
@@ -121,7 +117,7 @@ export default class Projects extends Component {
       //Kanoo Project Card
       const kanoo = this.state.projects[1];
       const kanooProject = (
-         <div className="project-card milestone-card" style={{ backgroundImage: `url(${kanoo.mainPhoto})` }}>
+         <div className="project-card" style={{ backgroundImage: `url(${kanoo.mainPhoto})` }}>
             <div className='card-text'>
                <div className='project-card-header'>
                   <h2>{kanoo.name}</h2>
@@ -182,15 +178,15 @@ export default class Projects extends Component {
             <div onClick={event => event.stopPropagation()}>
                <Slider {...settings} className='slider'>
                   <div>
-                     <img src={keyboardHero.image1} alt="" className='screenshot' />
+                     <img src={require('../../assets/images/keyboard-hero-image-1.png')} alt="" className='screenshot' />
                      <p>{keyboardHero.image1description}</p>
                   </div>
                   <div>
-                     <img src={keyboardHero.image2} alt="" className='screenshot' />
+                     <img src={require('../../assets/images/keyboard-hero-image-2.png')} alt="" className='screenshot' />
                      <p>{keyboardHero.image2description}</p>
                   </div>
                   <div>
-                     <img src={keyboardHero.image3} alt="" className='screenshot' />
+                     <img src={require('../../assets/images/keyboard-hero-image-3.png')} alt="" className='screenshot' />
                      <p>{keyboardHero.image3description}</p>
                   </div>
                </Slider>
@@ -238,12 +234,22 @@ export default class Projects extends Component {
                <h1 className='projects-title'>Projects</h1>
                <h3 className='hover-for-detail-text'>(Hover over picture for details)</h3>
                <h3 className='touch-for-detail-text'>(Touch picture for details)</h3>
+
                <div className='projects-container'>
                   {keyboardHeroProject}
                   {kanooProject}
                </div>
-               {this.state.displayKeyboardHeroImages && keyboardHeroImagesModal}
-               {this.state.displayKanooImages && kanooImagesModal}
+
+               {
+                  this.state.displayKeyboardHeroImages
+                  && keyboardHeroImagesModal
+               }
+
+               {
+                  this.state.displayKanooImages
+                  &&
+                  kanooImagesModal
+               }
             </div>
          </div>
       )
