@@ -7,7 +7,6 @@
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: nowrap;
-	overflow: scroll;
 }
 
 .projects-title {
@@ -29,8 +28,8 @@
 }
 
 .project-card {
-	width: 700px;
-	height: 450px;
+	width: 40vw;
+	height: 50vh;
 	margin: 2rem;
 	border-radius: 18px;
 	overflow: hidden;
@@ -165,6 +164,12 @@
 		img {
 			width: 100%;
 			height: auto;
+		}
+	}
+
+	.slick-dots li button {
+		&::before {
+			color: white;
 		}
 	}
 }

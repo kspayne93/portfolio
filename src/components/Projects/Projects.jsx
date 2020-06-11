@@ -5,21 +5,42 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+const keyboardHeroLanding = require('../../assets/images/keyboardHero/keyboard-hero-landing.png');
+const keyboardHeroImg2 = require('../../assets/images/keyboardHero/keyboard-hero-image-2.png');
+const keyboardHeroImg3 = require('../../assets/images/keyboardHero/keyboard-hero-image-3.png');
+const keyboardHeroImg4 = require('../../assets/images/keyboardHero/keyboard-hero-image-4.png');
+
+const kanooLanding = require('../../assets/images/kanoo/kanoo-landing.png');
+const kanooImg2 = require('../../assets/images/kanoo/kanoo-image-2.png');
+const kanooImg3 = require('../../assets/images/kanoo/kanoo-image-3.png');
+const kanooImg4 = require('../../assets/images/kanoo/kanoo-image-4.png');
+const kanooImg5 = require('../../assets/images/kanoo/kanoo-image-5.png');
+
+const nimbleLanding = require('../../assets/images/nimble/nimble-landing.png');
+const nimbleLogin = require('../../assets/images/nimble/nimble-login.png');
+const nimbleDashboardOverview = require('../../assets/images/nimble/nimble-dashboard-overview.png');
+const nimbleMyTasks = require('../../assets/images/nimble/nimble-my-tasks.png');
+const nimbleUnassignedTasks = require('../../assets/images/nimble/nimble-unassigned-tasks.png');
+const nimblePeople = require('../../assets/images/nimble/nimble-people.png');
+const nimbleProjectSettings = require('../../assets/images/nimble/nimble-project-settings.png');
+const nimbleSearch = require('../../assets/images/nimble/nimble-search.png');
+const nimbleAddTask = require('../../assets/images/nimble/nimble-add-task.png');
+const nimbleDragNDrop = require('../../assets/images/nimble/nimble-dragndrop.png');
+const nimbleEditList = require('../../assets/images/nimble/nimble-edit-list.png');
+const nimbleProfile = require('../../assets/images/nimble/nimble-profile.png');
+
+const sliderSettings = {
+   dots: true,
+   infinite: true,
+   speed: 500,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   fade: true
+};
+
 export default class Projects extends Component {
    state = {
       projects: [
-         {
-            name: 'Keyboard Hero',
-            keyPoint1: 'A typing challenge that tests a user`s speed and accuracy.',
-            keyPoint2: `A fun full-stack web application which helps people improve their typing skills.`,
-            keyPoint3: `Uses Javascript to check for user's typing accuracy in real-time`,
-            technologies: 'REACT | NODE | POSTGRESQL',
-            liveSiteURL: 'https://www.keyboardhero.fun',
-            codeURL: 'https://github.com/kspayne93/keyboard-hero',
-            image1description: 'Typing challenge provides real-time feedback on accuracy',
-            image2description: 'Once challenge is completed, user can see their typed Words Per Minute',
-            image3description: 'Database keeps track of leaderboard',
-         },
          {
             name: 'Kanoo',
             keyPoint1: 'An all-in-one travel planning app that enables users to collaborate with friends to plan upcoming trips. Developed in a group of 4',
@@ -30,93 +51,82 @@ export default class Projects extends Component {
             username: 'k',
             password: 'k',
             codeURL: 'https://github.com/wpr-45-studentdevs/travel-app',
-            mainPhoto: 'https://lh3.googleusercontent.com/R2ApV5YtZ6YVIC3iCDv9quhP-SxYYcctdYCmn_37DStLy5mCt0jd-_zbICaBC8fHzbAElCGv0i1oVwT3BET1Q-zRGIOZp3F1d036s9Dr1RjTwb7-22J5au-Exq4Ys-k79qSnHFauFEfikPELLu47X7DlwVGCJxxQ12EENwf05ji0K6y3uhqKSvdNrf8En-uJmZkjmddYaXsy8ViV4qVmxxQj5dqN5yEEQ-bS-RTfJcrSfVFBlk8GzPinPL6Tgm07tMWLbCCAjGmlzqst1TQUQh8FTGkJ1A96hZYdeyWaWaoLYC24ntid9z4MrBVFA2kI3QT_CShkcHuB-dhLbNmTYoFjB0js1V_sPD9iGaSgl9KRUU9AOKYjxuW_5QulVsd8nMfQNzb2icvYw6q1VgYqRkyUGzdKwzjOIBJVCswtJncy1SAUHkkKUf0DSIwIbVvVkUEL8e1NQ1UrvnLf0K6Dcinyf8FwczrQcQIBBDAQEnqPs5ID9V9tkb9Cgv6ax345hbQzrt4UWHG9x05fNSpJOiYQnDU9xBZxMrlncAefMI0nT46DL8i5RDKwmqvKaklQ22te7E70lzu_xAO7LT42hfbxEgabUKJws5cXmuPYcDiFnHz5Lxh6zPYn3RmXfYpZ4Lh2kyArAhkbKikvNab-ZQBxDk-YCkUDA8UDXLNMx1fWsPTwHbWEMzRJEq4Z5fQziPi6xvkdBIa9m528DWJ3NMNmfQ=w1917-h968-no',
-            image1: 'https://lh3.googleusercontent.com/R2ApV5YtZ6YVIC3iCDv9quhP-SxYYcctdYCmn_37DStLy5mCt0jd-_zbICaBC8fHzbAElCGv0i1oVwT3BET1Q-zRGIOZp3F1d036s9Dr1RjTwb7-22J5au-Exq4Ys-k79qSnHFauFEfikPELLu47X7DlwVGCJxxQ12EENwf05ji0K6y3uhqKSvdNrf8En-uJmZkjmddYaXsy8ViV4qVmxxQj5dqN5yEEQ-bS-RTfJcrSfVFBlk8GzPinPL6Tgm07tMWLbCCAjGmlzqst1TQUQh8FTGkJ1A96hZYdeyWaWaoLYC24ntid9z4MrBVFA2kI3QT_CShkcHuB-dhLbNmTYoFjB0js1V_sPD9iGaSgl9KRUU9AOKYjxuW_5QulVsd8nMfQNzb2icvYw6q1VgYqRkyUGzdKwzjOIBJVCswtJncy1SAUHkkKUf0DSIwIbVvVkUEL8e1NQ1UrvnLf0K6Dcinyf8FwczrQcQIBBDAQEnqPs5ID9V9tkb9Cgv6ax345hbQzrt4UWHG9x05fNSpJOiYQnDU9xBZxMrlncAefMI0nT46DL8i5RDKwmqvKaklQ22te7E70lzu_xAO7LT42hfbxEgabUKJws5cXmuPYcDiFnHz5Lxh6zPYn3RmXfYpZ4Lh2kyArAhkbKikvNab-ZQBxDk-YCkUDA8UDXLNMx1fWsPTwHbWEMzRJEq4Z5fQziPi6xvkdBIa9m528DWJ3NMNmfQ=w1917-h968-no',
-            image2: 'https://lh3.googleusercontent.com/aNdGVLqife_Adc5nnmnEiQJKrSgIlNRlcWtO9fVIgIqg7fNuxrlgbny0g0312YziKT4HOxmb5Pm6S-7kl0-KfFeFjDJNVhnVo75wo4suuhmEyAijPBFLXwPVDOfDCPGYgH3eFgdThKEu9bZcx6LWurb7CdwaI01bOXuEQzlI3EOiYBgIRuBwuTT6vvIVgtnhb9oiGJSnHr5n0j5Qbbf8hbcj_XToF7oaqNElyYMjTgDSvfGpwevbjchshdupRwAu3vjjuAJ81seorpz2kygoWE61DNcYPvb7q0AHsifdPlQzD-6vUH3AL199jaxMgjEK0zUygtO6JtbbEN6P9qOPLmh8XufVr_WieOiQkV4G-8WrDrH0axwOXUKd5yltUfI8MXHG-PkyRMrt5SUq8p43L_TPGVEWkwCapk_ltqdF7fpfTgMLAIQ6sNdWpPS4oqWA_KDTNIdvUjAyjC7_ZniFNfvZK99BlOO91uSBMLHhTvJUgRrM9kEkFwYDG3yMbE8gLNyeoLAXo9c36PSTCNYMqKAvl8PXydsgEioOWWO1c6xNdpPz4vB65vQ4Bm09e1PHMCa48VL_yN5bQbS-QKtjj4qpIl-tCvt7fY8q-SrOwwpoLl_KDg55VAiW11YrmYsUSeIT0qVGssmfYOMCKseiQO_9IAOOVRL5ArfT4ncIOQqF1nYgW-0zUMJoGLrKAsJkOuib6oXWQ2pvpcpFN0dfjXs8gA=w1920-h969-no',
-            image3: 'https://lh3.googleusercontent.com/EiUiJtagkAMcHdRa56Y8Ez4yaK2yGWUumRTbSZayv1tGya-x-hLBMtv_Pth85qoijyyD0BXmUANGcm-aHPQtQUfBNKuMwpsN-C5deiywoh9nOVTgRM-eWfKwkeQsjCgpQs3VseDg6u25sDNeIN_8GaoVi32kI8NKRKvxXeoNOySAHtSqENkysIEKR-7N_429QuL9kQX2jlrMuv0Kl967dxnliR9zsr4Wks_0IwW8ZGOvSxPkltC7kXnLG2e08kMhZaRt6QEugh3z0X3Mwx_HnpYexj0VQAy4dKrFYLl2aH5Q0lk_Fv91sytj3QNcMkbJIG8bI8mC-08Y7c4JUFmhPx-9Odnd0pVAPCSiJOxGezyrjLVLQapxmg21HcWi59Rkbh_MYdc_n1XJm5BWNnjw2IQk4mYsyRovyYe2LVGUUm4yPp6R1q42u0DTpzDgjgUIYLM9Wzi54-HUqd0F6RujKBiVKdYcZWPOVp7f_IZeUb6mlIHpXuAz109AzA7JoIsRBNRASNxwtBP1zSLQshuo4iHZTXz0Hp8jwp9fI9EXQqQcVofXHqYxqlnanjJ7bZSYEsL6rlEPqGDXv_1zSx7Sx90xs9rzuPbgFlis8miATRZ-5USI-jZkKbyp1oJXVY7SDjUBWYaqtvRllS_XapPro57uUhuiiHxquup9-s9N8n42U-cKCoVj7Dvd7aDvXmhfjNnfgw9fn18WgbBhd2lF49z9qQ=w1920-h970-no',
-            image4: 'https://lh3.googleusercontent.com/uti7y4JINVUO0uaFC5LBGXu41rNRnFtuZm7LEPAMF6_px943mhhBid4zO0Hum_efAmRrXzwXVTmMmuTcqafAJa7XBg_80ZhFzS-Fv6C0ZSoxN_yIntv9EwO4k1tengIEtwlxz70xhxEs4dT2DvRI4uCQuEDzMBg6l83oahMm9EOtPrLf-ImhV3oZGcjQekZBnGXp4pns7Ogqp0GiLat4bRojrVJAPmNNkSVRtfAHAUluBikaSxKF4trjVceP_8_-2x_Kyb9xAb1EXIiP9i45oNyOkLxz92qEvei0GXEeE8vk2zzVo_fR37eQDwH2Yyo_3tGf7hdZYk7NykvVBiLuRQWoYCbxaTYZe650pgZlRMhGLGanCvFJIqyG-zySDyrs5OcayU0gZmkwwnwlv_2Nst0qSRQZPcy2dc4MLha-HXuodcNaEDkp__qA9QyXPd3ce_wGD9AfLmnFGLI0nkufSugtIbgcJOc07C2PTO_nLdw3PZqbQXeAQnAHoS09LhS78ZXP8h6GSj8UjPjM-LgCRtwqsamjXr3Vplkhu9oBEeVz3F9cNoP3CUVSspVYZflsBzqPyjb_gqnyXyIj-BUvbkfgLX3jf9y7mwAsz-eegJXRKW1QjF-jKNtvvhEX87WMzoOODhDOA6SB7r7TWAE_DTSQ5zzzm-wxajWnL3WO0e408gFOHUjR_l32tC2tOYHoYbd0-197AcJyH_nuIgPxnDehAA=w1920-h971-no',
-            image5: 'https://lh3.googleusercontent.com/4Lj8rXnkz8VVEZJEiM9HDBHvCdsWccnsrMSiW0YM07vcqlb-JC3jxNXKdgYPS2x67vWfK_7o7hkDCopMAr1lxtkKSYe5xbOW1HJ8t3X1G1AIreqNfTk3OUSs6MRrDBRmNztFX73EYrh66PTmGm3pPUCFR1xkcKiggIbXpgvPWARRoNSfhmLGdsUItSo79DzWMdzZUv0gT73oUiQSG0EsWcqEWVO4nN_N2XFT4jvkuW1ar2lw4Bz_HitlxooQ-SftjLZAaH1hhscIt0NCb5CHDVsvKbIGEwD14jE9kvhkY7Zakw6Tlp6W_0DdcUI2m3WsHeSd4Ovi16J7WBKSwHUyE81otfLVoLGYd-ScXAhaYfSf-2bf4c_RQoIeU8xwO4g6_t_de25B5M1FVq5mSdeEYT3kJrcYwxu8rJ-f9eTdHSzVx9uK3tt6DQ1x_k0iPDkNnJ5U9PkLdebbzDdyUKYQE4reEojTexeiNBeb0a9g3mbUI2zU574rc0DgwrtRnHEBTkByMKlt4u3ShDm5ZfrvXgFS_MvjqdM_3RohgTMfnUkDfSquxtvh_YOyNjMZcDzJ4cNqT88Q6QdpUrHhy8pL6XC6YP22ebbxBQQe5AD-Yhy0dHi76UPBvHJ6E7TUrYAPJ3c3f3FVN2sj16w7LY9xED4tbv8jj68KhcfSu5c4h7Nhy3-3aDp9afCGRQvJblBfax5c-N0pXORQUy_gy7ha5vukbw=w1920-h970-no',
+            mainPhoto: kanooLanding,
+            image1: kanooLanding,
+            image2: kanooImg2,
+            image3: kanooImg3,
+            image4: kanooImg4,
+            image5: kanooImg5,
             image1description: 'Landing Page with transitioning background image (React Slick)',
             image2description: 'Dashboard View displaying all public trips',
             image3description: 'My Trips view showing all user trips (user can search, and toggle between upcoming / completed trips)',
             image4description: 'Trip Details View (user can update budget, take notes (text editor made with Quill), add destinations, add activities, add travelers). All travelers who are assigned to this trip can edit and collaberate.',
             image5description: 'Bucket List View'
          },
+         {
+            name: 'Keyboard Hero',
+            keyPoint1: 'A typing challenge that tests a user`s speed and accuracy.',
+            keyPoint2: `A fun full-stack web application which helps people improve their typing skills.`,
+            keyPoint3: `Uses Javascript to check for user's typing accuracy in real-time`,
+            technologies: 'REACT | NODE | POSTGRESQL',
+            liveSiteURL: 'https://www.keyboardhero.fun',
+            codeURL: 'https://github.com/kspayne93/keyboard-hero',
+            mainPhoto: keyboardHeroLanding,
+            image1: keyboardHeroLanding,
+            image2: keyboardHeroImg2,
+            image3: keyboardHeroImg3,
+            image4: keyboardHeroImg4,
+            image1description: 'Landing page',
+            image2description: 'Typing challenge provides real-time feedback on accuracy',
+            image3description: 'Once challenge is completed, user can see their typed Words Per Minute',
+            image4description: 'Database keeps track of leaderboard',
+         },
+         {
+            name: 'Nimble',
+            keyPoint1: 'Full-stack project organization/management tool.',
+            keyPoint2: `Simple & intuitive UX/UI allows teams to collaborate efficiently with easy-to-use gestures, including drag & drop on tasks and lists.`,
+            keyPoint3: `Inspired by Kanban Board methodology, users can organize ideas by projects, and create custom lists & tasks.`,
+            keyPoint4: 'Users can manage connections (aka "friends") and add them to projects, tasks, etc.',
+            technologies: 'REACT | NODE | POSTGRESQL',
+            liveSiteURL: 'https://nimblemanager.com/',
+            username: 'demo@demo.com',
+            password: 'demo',
+            codeURL: 'https://github.com/kspayne93/nimble',
+            mainPhoto: nimbleLanding,
+            image1: nimbleLanding,
+            image2: nimbleLogin,
+            image3: nimbleDashboardOverview,
+            image4: nimbleMyTasks,
+            image5: nimbleUnassignedTasks,
+            image6: nimblePeople,
+            image7: nimbleProjectSettings,
+            image8: nimbleEditList,
+            image9: nimbleAddTask,
+            image10: nimbleDragNDrop,
+            image11: nimbleSearch,
+            image12: nimbleProfile,
+            image1description: 'Landing page',
+            image2description: 'Login page',
+            image3description: 'Project overview dashboard',
+            image4description: 'Filtering by "My Tasks"',
+            image5description: 'Filtering by "Unassigned Tasks"',
+            image6description: 'Project Collaborators / User Connections page',
+            image7description: 'Project Settings page',
+            image8description: 'Editing list',
+            image9description: 'Adding task',
+            image10description: "Drag n' Drop functionality",
+            image11description: 'Search by name/task functionality',
+            image12description: 'Profile page',
+         },
       ],
-      displayKeyboardHeroImages: false,
       displayKanooImages: false,
-   }
+      displayKeyboardHeroImages: false,
+      displayNimbleImages: false,
+   };
 
-   render() {
-      //Slider Settings
-      const settings = {
-         dots: true,
-         infinite: true,
-         speed: 500,
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         fade: true
-      };
-      
-      //PROJECT CARDS
-      //Keyboard Hero Project Card
-      const keyboardHero = this.state.projects[0];
-      const keyboardHeroProject = (
-         <div
-            className="project-card"
-            style={{ backgroundImage: `url(${require('../../assets/images/keyboard-hero-landing.png')})`}}
-         >
-            <div className='card-text'>
-               <div className='project-card-header'>
-                  <h2>{keyboardHero.name}</h2>
-                  <p onClick={() => this.setState({ displayKeyboardHeroImages: true })} style={{ color: '#0bd4ba' }}>View Photos</p>
-                  <div className='small-link-container'> 
-                  {/* Only displays in mobile view */}
-                     <div>
-                        <a style={{ color: '#0bd4ba' }} target='_blank' href={keyboardHero.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
-                        <div>
-                           <span>Username: {keyboardHero.username}</span>
-                           <span> | Password: {keyboardHero.password}</span>
-                        </div>
-                     </div>
-                     <div>
-                        <a style={{ color: '#0bd4ba' }} target='_blank' href={keyboardHero.codeURL} rel="noopener noreferrer">View Code</a>
-                        <div>
-                           <span style={{ opacity: '0' }} > View Code </span>
-                        </div>
-                     </div>
-
-                  </div>
-               </div>
-               <div>
-                  <ul>
-                     <li>{keyboardHero.keyPoint1}</li>
-                     <li>{keyboardHero.keyPoint2}</li>
-                     <li>{keyboardHero.keyPoint3}</li>
-                     {keyboardHero.keyPoint4 && <li>{keyboardHero.keyPoint4}</li>}
-                  </ul>
-                  <div className='technologies-list'>
-                     <h5>{keyboardHero.technologies}</h5>
-                  </div>
-                  <div className='link-container'>
-                     <div>
-                        <a style={{ color: '#0bd4ba' }} target='_blank' href={keyboardHero.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
-                     </div>
-                     <div>
-                        <a style={{ color: '#0bd4ba' }} target='_blank' href={keyboardHero.codeURL} rel="noopener noreferrer">View Code</a>
-                        <div>
-                           <span style={{ opacity: '0' }}>View Code</span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      )
-
-      //Kanoo Project Card
-      const kanoo = this.state.projects[1];
-      const kanooProject = (
+   kanooProject = () => {
+      const kanoo = this.state.projects[0];
+      return (
          <div className="project-card" style={{ backgroundImage: `url(${kanoo.mainPhoto})` }}>
             <div className='card-text'>
                <div className='project-card-header'>
@@ -137,7 +147,7 @@ export default class Projects extends Component {
                            <span style={{ opacity: '0' }}>View Code</span>
                         </div>
                      </div>
-
+   
                   </div>
                </div>
                <div>
@@ -169,37 +179,125 @@ export default class Projects extends Component {
             </div>
          </div>
       )
+   };
 
-      // MODALS
-      //Keyboard Hero Modal
-      let keyboardHeroImagesModal = (
-         <div className='modal-wrapper' onClick={() => this.setState({ displayKeyboardHeroImages: false })}>
-            <i className="fas fa-times modal-back-button" onClick={() => this.setState({ displayKeyboardHeroImages: false })}></i>
-            <div onClick={event => event.stopPropagation()}>
-               <Slider {...settings} className='slider'>
-                  <div>
-                     <img src={require('../../assets/images/keyboard-hero-image-1.png')} alt="" className='screenshot' />
-                     <p>{keyboardHero.image1description}</p>
+   keyboardHeroProject = () => {
+      const keyboardHero = this.state.projects[1];
+      return (
+         <div
+            className="project-card"
+            style={{ backgroundImage: `url(${keyboardHero.mainPhoto})`}}
+         >
+            <div className='card-text'>
+               <div className='project-card-header'>
+                  <h2>{keyboardHero.name}</h2>
+                  <p onClick={() => this.setState({ displayKeyboardHeroImages: true })} style={{ color: '#0bd4ba' }}>View Photos</p>
+                  <div className='small-link-container'> 
+                  {/* Only displays in mobile view */}
+                     <div>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={keyboardHero.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                        <div>
+                           <span>Username: {keyboardHero.username}</span>
+                           <span> | Password: {keyboardHero.password}</span>
+                        </div>
+                     </div>
+                     <div>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={keyboardHero.codeURL} rel="noopener noreferrer">View Code</a>
+                        <div>
+                           <span style={{ opacity: '0' }} > View Code </span>
+                        </div>
+                     </div>
+
                   </div>
-                  <div>
-                     <img src={require('../../assets/images/keyboard-hero-image-2.png')} alt="" className='screenshot' />
-                     <p>{keyboardHero.image2description}</p>
+               </div>
+               <div>
+                  <ul>
+                     <li>{keyboardHero.keyPoint1}</li>
+                     <li>{keyboardHero.keyPoint2}</li>
+                     <li>{keyboardHero.keyPoint3}</li>
+                  </ul>
+                  <div className='technologies-list'>
+                     <h5>{keyboardHero.technologies}</h5>
                   </div>
-                  <div>
-                     <img src={require('../../assets/images/keyboard-hero-image-3.png')} alt="" className='screenshot' />
-                     <p>{keyboardHero.image3description}</p>
+                  <div className='link-container'>
+                     <div>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={keyboardHero.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                     </div>
+                     <div>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={keyboardHero.codeURL} rel="noopener noreferrer">View Code</a>
+                        <div>
+                           <span style={{ opacity: '0' }}>View Code</span>
+                        </div>
+                     </div>
                   </div>
-               </Slider>
+               </div>
             </div>
          </div>
       )
-      
-      //Kanoo Modal
-      let kanooImagesModal = (
+   };
+
+   nimbleProject = () => {
+      const nimble = this.state.projects[2];
+      return (
+         <div
+            className="project-card"
+            style={{ backgroundImage: `url(${nimble.mainPhoto})` }}
+         >
+            <div className='card-text'>
+               <div className='project-card-header'>
+                  <h2>{nimble.name}</h2>
+                  <p onClick={() => this.setState({ displayNimbleImages: true })} style={{ color: '#0bd4ba' }}>View Photos</p>
+                  <div className='small-link-container'> 
+                  {/* Only displays in mobile view */}
+                     <div>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={nimble.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                        <div>
+                           <span>Username: {nimble.username}</span>
+                           <span> | Password: {nimble.password}</span>
+                        </div>
+                     </div>
+                     <div>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={nimble.codeURL} rel="noopener noreferrer">View Code</a>
+                        <div>
+                           <span style={{ opacity: '0' }} > View Code </span>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+               <div>
+                  <ul>
+                     <li>{nimble.keyPoint1}</li>
+                     <li>{nimble.keyPoint2}</li>
+                     <li>{nimble.keyPoint3}</li>
+                  </ul>
+                  <div className='technologies-list'>
+                     <h5>{nimble.technologies}</h5>
+                  </div>
+                  <div className='link-container'>
+                     <div>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={nimble.liveSiteURL} rel="noopener noreferrer">View Live Site</a>
+                     </div>
+                     <div>
+                        <a style={{ color: '#0bd4ba' }} target='_blank' href={nimble.codeURL} rel="noopener noreferrer">View Code</a>
+                        <div>
+                           <span style={{ opacity: '0' }}>View Code</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      )
+   };
+
+   kanooImagesModal = () => {
+      const kanoo = this.state.projects[0];
+      return (
          <div className='modal-wrapper' onClick={() => this.setState({ displayKanooImages: false })}>
             <i className="fas fa-times modal-back-button" onClick={() => this.setState({ displayKanooImages: false })}></i>
             <div onClick={e => e.stopPropagation()}>
-               <Slider {...settings} className='slider'>
+               <Slider {...sliderSettings} className='slider'>
                   <div>
                      <img src={kanoo.image1} alt="" />
                      <p>{kanoo.image1description}</p>
@@ -224,7 +322,99 @@ export default class Projects extends Component {
             </div>
          </div>
       )
+   };
 
+   keyboardHeroImagesModal = () => {
+      const keyboardHero = this.state.projects[1];
+      return (
+         <div className='modal-wrapper' onClick={() => this.setState({ displayKeyboardHeroImages: false })}>
+            <i className="fas fa-times modal-back-button" onClick={() => this.setState({ displayKeyboardHeroImages: false })}></i>
+            <div onClick={event => event.stopPropagation()}>
+               <Slider {...sliderSettings} className='slider'>
+                  <div>
+                     <img src={keyboardHero.image1} alt="" className='screenshot' />
+                     <p>{keyboardHero.image1description}</p>
+                  </div>
+                  <div>
+                     <img src={keyboardHero.image2} alt="" className='screenshot' />
+                     <p>{keyboardHero.image2description}</p>
+                  </div>
+                  <div>
+                     <img src={keyboardHero.image3} alt="" className='screenshot' />
+                     <p>{keyboardHero.image3description}</p>
+                  </div>
+                  <div>
+                     <img src={keyboardHero.image4} alt="" className='screenshot' />
+                     <p>{keyboardHero.image4description}</p>
+                  </div>
+               </Slider>
+            </div>
+         </div>
+      )
+   };
+
+   nimbleImagesModal = () => {
+      const nimble = this.state.projects[2];
+      return (
+         <div className='modal-wrapper' onClick={() => this.setState({ displayNimbleImages: false })}>
+            <i className="fas fa-times modal-back-button" onClick={() => this.setState({ displayNimbleImages: false })}></i>
+            <div onClick={e => e.stopPropagation()}>
+               <Slider {...sliderSettings} className='slider'>
+                  <div>
+                     <img src={nimble.image1} alt="" />
+                     <p>{nimble.image1description}</p>
+                  </div>
+                  <div>
+                     <img src={nimble.image2} alt="" />
+                     <p>{nimble.image2description}</p>
+                  </div>
+                  <div>
+                     <img src={nimble.image3} alt="" />
+                     <p>{nimble.image3description}</p>
+                  </div>
+                  <div>
+                     <img src={nimble.image4} alt="" />
+                     <p>{nimble.image4description}</p>
+                  </div>
+                  <div>
+                     <img src={nimble.image5} alt="" />
+                     <p>{nimble.image5description}</p>
+                  </div>
+                  <div>
+                     <img src={nimble.image6} alt="" className='screenshot' />
+                     <p>{nimble.image6description}</p>
+                  </div>
+                  <div>
+                     <img src={nimble.image7} alt="" className='screenshot' />
+                     <p>{nimble.image7description}</p>
+                  </div>
+                  <div>
+                     <img src={nimble.image8} alt="" className='screenshot' />
+                     <p>{nimble.image8description}</p>
+                  </div>
+                  <div>
+                     <img src={nimble.image9} alt="" className='screenshot' />
+                     <p>{nimble.image9description}</p>
+                  </div>
+                  <div>
+                     <img src={nimble.image10} alt="" className='screenshot' />
+                     <p>{nimble.image10description}</p>
+                  </div>
+                  <div>
+                     <img src={nimble.image11} alt="" className='screenshot' />
+                     <p>{nimble.image11description}</p>
+                  </div>
+                  <div>
+                     <img src={nimble.image12} alt="" className='screenshot' />
+                     <p>{nimble.image12description}</p>
+                  </div>
+               </Slider>
+            </div>
+         </div>
+      )
+   };
+
+   render() {
       return (
          <div>
             <Link to='/' className='link'>
@@ -236,19 +426,27 @@ export default class Projects extends Component {
                <h3 className='touch-for-detail-text'>(Touch picture for details)</h3>
 
                <div className='projects-container'>
-                  {keyboardHeroProject}
-                  {kanooProject}
+                  { this.nimbleProject() }
+                  { this.keyboardHeroProject() }
+                  { this.kanooProject() }
                </div>
 
                {
                   this.state.displayKeyboardHeroImages
-                  && keyboardHeroImagesModal
+                  &&
+                  this.keyboardHeroImagesModal()
                }
 
                {
                   this.state.displayKanooImages
                   &&
-                  kanooImagesModal
+                  this.kanooImagesModal()
+               }
+
+               {
+                  this.state.displayNimbleImages
+                  &&
+                  this.nimbleImagesModal()
                }
             </div>
          </div>
