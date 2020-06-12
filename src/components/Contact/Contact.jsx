@@ -10,7 +10,7 @@ export default function Contact() {
             <i className="fas fa-undo class back-button"></i>
          </Link>
          <h1 className='contact-title'>Contact:</h1>
-         <div className='contact-text'>
+         <div className='contact-icon-container'>
             <div>
                <i className="far fa-envelope contact-icon"></i>
                <p>kspayne93@gmail.com</p>

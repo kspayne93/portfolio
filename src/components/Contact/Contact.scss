@@ -5,6 +5,7 @@
 	align-items: center;
 	flex-wrap: nowrap;
 	padding: 2rem;
+	overflow: hidden;
 	
 	.contact-title {
 		opacity: 0;
@@ -17,27 +18,37 @@
 		text-shadow: 0 0 1vw #ec0101, 0 0 3vw #ec0101, 0 0 10vw #ec0101, 0 0 10vw #ec0101, 0 0 .4vw #ec0101, .3vw .3vw .1vw #500000;
 	}
 	
-	.contact-text {
+	.contact-icon-container {
+		height: 80vh;
 		animation: fadeIn .25s linear;
 		animation-delay: .2s;
 		animation-fill-mode: forwards;
 		opacity: 0;
 		padding: 1em;
-	
-		i {
-			font-size: 3rem;
-			margin-bottom: .5rem;
-			color: #ffffff;
-			text-shadow: 0 0 1vw #b1b1b1, 0 0 3vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 .4vw #b1b1b1, .3vw .3vw .1vw #444141;
-		}
-	
-		p {
-			font-size: 1.5rem;
-			margin: 5px;
-		}
-	
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
 		div {
-			margin: 4rem 0;
+			height: 25%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			i {
+				font-size: 3rem;
+				margin-bottom: .5rem;
+				color: #ffffff;
+				text-shadow: 0 0 1vw #b1b1b1, 0 0 3vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 .4vw #b1b1b1, .3vw .3vw .1vw #444141;
+			}
+		
+			p {
+				font-size: 1.5rem;
+				margin: 5px;
+			}
 		}
 	}
 	
