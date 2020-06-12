@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.scss';
 import routes from './routes';
 
+const brickWall = require('./assets/images/brick-wall.jpg');
+
 const keyboardHeroLanding = require('./assets/images/keyboardHero/keyboard-hero-landing.png');
 const keyboardHeroImg2 = require('./assets/images/keyboardHero/keyboard-hero-image-2.png');
 const keyboardHeroImg3 = require('./assets/images/keyboardHero/keyboard-hero-image-3.png');
@@ -29,6 +31,7 @@ const nimbleProfile = require('./assets/images/nimble/nimble-profile.png');
 class App extends Component {
   componentDidMount = () => {
     const imagesToPreload = [
+      brickWall,
       keyboardHeroLanding,
       keyboardHeroImg2,
       keyboardHeroImg3,
