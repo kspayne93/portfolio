@@ -12,7 +12,7 @@
 		animation: fadeIn 0s linear;
 		animation-delay: 0s;
 		animation-fill-mode: forwards;
-		margin-bottom: 2rem;
+		margin: 0 0 2rem 0;
 		font-family: neon;
 		color: #ff0000;
 		text-shadow: 0 0 1vw #ec0101, 0 0 3vw #ec0101, 0 0 10vw #ec0101, 0 0 10vw #ec0101, 0 0 .4vw #ec0101, .3vw .3vw .1vw #500000;
@@ -55,7 +55,22 @@
 			}
 		}
 	}
+
+	@media(max-width: 1000px) {
+		.contact-icon-container {
+			div {
+				i {
+					font-size: 2rem;
+				}
+		
+				p {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
 }
+
 
 
 // Animation

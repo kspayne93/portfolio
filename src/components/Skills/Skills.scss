@@ -1,188 +1,135 @@
 .skills-page-main {
+   height: 100%;
+   width: 100%;
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
+   justify-content: flex-start;
    align-items: center;
    overflow: hidden;
    padding: 2rem;
 
    .skills-title {
-      margin: 0;
+      margin: 0 0 2rem 0;
       font-family: neon;
       color: #e100ff;
       text-shadow: 0 0 1vw #b007ff, 0 0 3vw #b007ff, 0 0 10vw #b007ff, 0 0 10vw #b007ff, 0 0 .4vw #cc00ff, .3vw .3vw .1vw #3c005f;
    }
+
+   .skills-container {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: stretch;
+      overflow-x: hidden;
+      overflow-y: auto;
+   
+      .skill-container {
+         height: 12rem;
+         width: 12rem;
+         margin: 1rem;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      
+         p {
+            font-size: 20px;
+         }
+   
+         svg {
+            width: 100%;
+            height: 100%;
+         }
+   
+      }
+   
+      .skill-1 {
+         animation: fadeIn .5s linear;
+         animation-delay: .25s;
+         animation-fill-mode: forwards;
+         opacity: 0;
+      }
+      
+      .skill-2 {
+         animation: fadeIn .5s linear;
+         animation-delay: .5s;
+         animation-fill-mode: forwards;
+         opacity: 0;
+      }
+      
+      .skill-3 {
+         animation: fadeIn .5s linear;
+         animation-delay: .75s;
+         animation-fill-mode: forwards;
+         opacity: 0;
+      }
+      
+      .skill-4 {
+         animation: fadeIn .5s linear;
+         animation-delay: 1s;
+         animation-fill-mode: forwards;
+         opacity: 0;
+      }
+      
+      .skill-5 {
+         animation: fadeIn .5s linear;
+         animation-delay: 1.25s;
+         animation-fill-mode: forwards;
+         opacity: 0;
+      }
+      
+      .skill-6 {
+         animation: fadeIn .5s linear;
+         animation-delay: 1.5s;
+         animation-fill-mode: forwards;
+         opacity: 0;
+      }
+      
+      .skill-7 {
+         animation: fadeIn .5s linear;
+         animation-delay: 1.75s;
+         animation-fill-mode: forwards;
+         opacity: 0;
+      }
+      
+      .skill-8 {
+         animation: fadeIn .5s linear;
+         animation-delay: 2s;
+         animation-fill-mode: forwards;
+         opacity: 0;
+      }
+   }
+
+   @media(max-width: 1200px) {
+      .skills-container {
+         .skill-container {
+            height: 10rem;
+            width: 10rem;
+            margin: .25rem;
+         }
+      }
+   }
+
+   @media(max-width: 600px) {
+      .skills-container {
+         .skill-container {
+            height: 8rem;
+            width: 8rem;
+            margin: .25rem;
+         }
+      }
+   }
 }
 
-.skills-container {
-   width: 65vw;
-   height: 70vh;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   align-items: center;
-   align-content: space-around;
-
-   .skill-container {
-      height: 12rem;
-      width: 12rem;
-   
-      p {
-         font-size: 20px;
-      }
-
-      svg {
-         width: 100%;
-         height: 100%;
-      }
-   
-      text-align: center;
-   }
-
-   .skill-icon {
-      width: 100%;
-      height: 100%;
-   }
-   
-   .skill-1 {
-      animation: fadeIn .75s linear;
-      animation-delay: .5s;
-      animation-fill-mode: forwards;
-      opacity: 0;
-   }
-   
-   .skill-2 {
-      animation: fadeIn .75s linear;
-      animation-delay: 2s;
-      animation-fill-mode: forwards;
-      opacity: 0;
-   }
-   
-   .skill-3 {
-      animation: fadeIn .75s linear;
-      animation-delay: 1s;
-      animation-fill-mode: forwards;
-      opacity: 0;
-   }
-   
-   .skill-4 {
-      animation: fadeIn .75s linear;
-      animation-delay: 1.5s;
-      animation-fill-mode: forwards;
-      opacity: 0;
-   }
-   
-   .skill-5 {
-      animation: fadeIn .75s linear;
-      animation-delay: 2.25s;
-      animation-fill-mode: forwards;
-      opacity: 0;
-   }
-   
-   .skill-6 {
-      animation: fadeIn .75s linear;
-      animation-delay: .75s;
-      animation-fill-mode: forwards;
-      opacity: 0;
-   }
-   
-   .skill-7 {
-      animation: fadeIn .75s linear;
-      animation-delay: 1.75s;
-      animation-fill-mode: forwards;
-      opacity: 0;
-   }
-   
-   .skill-8 {
-      animation: fadeIn .75s linear;
-      animation-delay: 1.25s;
-      animation-fill-mode: forwards;
-      opacity: 0;
-   }
-   
-}
 
 .and-more-text {
-   animation: fadeIn .75s linear;
+   animation: fadeIn .5s linear;
    animation-delay: 2.75s;
    animation-fill-mode: forwards;
    opacity: 0;
    margin-top: 2em;
-}
-
-
-//MEDIA QUERIES
-//Mobile Resolution
-@media (max-width: 415px) {
-   .skills-container {
-      flex-direction: column;
-      width: 400px;
-      height: 555px;
-      p {
-         margin: 0;
-      }
-   }
-
-   .skill-container {
-      height: 90px;
-      width: 90px;
-      margin: 15px;
-   }
-
-   .back-button {
-      left: 6%;
-   }
-}
-
-@media (min-width: 416px) {
-   .skills-container {
-      flex-direction: row;
-      width: 500px;
-      height: 225px;
-      p {
-         margin: 0;
-      }
-      margin-top: 10px;
-   }
-
-   .skill-container {
-      height: 90px;
-      width: 90px;
-      margin: 15px;
-   }
-}
-
-@media (min-width: 813px) {
-   .skills-container {
-      width: 65vw;
-      height: 70vh;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
-      align-content: space-around;
-   }
-   
-   .skill-container {
-      height: 10rem;
-      width: 10rem;
-   
-      p {
-         font-size: 20px;
-      }
-   
-      text-align: center;
-   }
-}
-
-@media (min-width: 1441px) {
-   .skills-container {
-      width: 1000px;
-   }
-   .skill-container {
-      height: 12rem;
-      width: 12rem;
-   }
 }

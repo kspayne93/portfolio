@@ -1,50 +1,35 @@
 .about-page-main {
+	height: 100%;
+	width: 100%;
    display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: nowrap;
 	padding: 2rem;
+	overflow: hidden;
 
 	.about-title {
-		opacity: 0;
-		animation: fadeIn .5s linear;
-		animation-delay: 1s;
-		animation-fill-mode: forwards;
 		margin: 0;
 		font-family: neon;
 		color: #f7fc00;
 		text-shadow: 0 0 1vw #dcf118, 0 0 3vw #dcf118, 0 0 10vw #dcf118, 0 0 10vw #dcf118, 0 0 .4vw #dcf118, .3vw .3vw .1vw #504400;
 	}
-	
-	.about-container {
-		box-sizing: border-box;
-		border: 1px solid darkgray;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: center;
-		align-items: center;
-		animation: about-expand .5s linear;
-		animation-delay: .25s;
-		animation-fill-mode: forwards;
-		opacity: 0;
-		background-color: rgba(0, 0, 0, 0.521);
-		overflow: auto;
-	}
+
 	
 	.about-text {
-		animation: fadeIn .5s linear;
-		animation-delay: 1s;
-		animation-fill-mode: forwards;
-		opacity: 0;
-		padding: 1.5em;
+		height: 100%;
+		width: 90%;
+		max-width: 1400px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-			p {
-				font-size: 1.5rem;
-			}
+		align-items: center;
+		overflow: auto;
+
+		p {
+			font-size: 1.5rem;
+		}
 	}
 	
 	.about-img {
@@ -53,33 +38,11 @@
 	}
 }
 
-
-// Animations
-@keyframes about-expand {
-	0% {
-		opacity: 1;
-		width: 0vw;
-		height: 0vw;
-	}
-	50% {
-		opacity: 1;
-		width: 70vw;
-		max-width: 900px;
-		height: 0vh;
-	}
-	100% {
-		opacity: 1;
-		width: 70vw;
-		max-width: 900px;
-		height: 80vh;
-	}
-}
-
 // Media Queries
 @media (max-width: 900px) {
-	.about-text {
-		p {
-			font-size: .8rem;
+	.about-page-main {
+		.about-text {
+			justify-content: flex-start;
 		}
 	}
 }
