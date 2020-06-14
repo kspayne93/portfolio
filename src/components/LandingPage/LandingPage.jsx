@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './LandingPage.scss';
-
-// const brickWall = require('../../assets/images/brick-wall.jpg');
+import getWindowDimensions from '../../hooks/getWindowDimensions';
 
 const keyboardHeroLanding = require('../../assets/images/keyboardHero/keyboard-hero-landing.png');
 const keyboardHeroImg2 = require('../../assets/images/keyboardHero/keyboard-hero-image-2.png');
@@ -28,8 +27,11 @@ const nimbleDragNDrop = require('../../assets/images/nimble/nimble-dragndrop.png
 const nimbleEditList = require('../../assets/images/nimble/nimble-edit-list.png');
 const nimbleProfile = require('../../assets/images/nimble/nimble-profile.png');
 
-export default class LandingPage extends Component {
-   componentDidMount = () => {
+
+export default function LandingPage() {
+   const { height, width } = getWindowDimensions();
+
+   useEffect(() => {
       const imagesToPreload = [
          keyboardHeroLanding,
          keyboardHeroImg2,
@@ -55,40 +57,38 @@ export default class LandingPage extends Component {
       ];
 
       imagesToPreload.forEach(image => new Image().src = image);
-   };
+   }, []);
 
-   render() {
-      return (
-         <div className='page landing-page-main'>
-            <div className='landing-link-container skills-link'>
-               <Link to='/skills' className='link'>
-                  <p className='skills-link-text'>Skills</p>
-               </Link>
-            </div>
-
-            <div className='landing-link-container projects-link'>
-               <Link to='/projects' className='link'>
-                  <p className='projects-link-text'>Projects</p>
-               </Link>
-            </div>
-
-            <div className='middle-landing-container'>
-               <p className='orange-neon'>Kyle<span>__</span>Payne</p>
-               <p className='blue-neon'>Full-Stack<span>__</span>Web<span>__</span>Developer</p>
-            </div>
-
-            <div className='landing-link-container about-link'>
-               <Link to='/about' className='link'>
-                  <p className='about-link-text'>About </p>
-               </Link>
-            </div>
-
-            <div className='landing-link-container contact-link'>
-               <Link to='/contact' className='link'>
-                  <p className='contact-link-text'>Contact</p>
-               </Link>
-            </div>
+   return (
+      <div className='landing-page-main' style={{ height: `${height}px`, width: `${width}px`}}>
+         <div className='landing-link-container skills-link'>
+            <Link to='/skills' className='link'>
+               <p className='skills-link-text'>Skills</p>
+            </Link>
          </div>
-      )
-   }
+
+         <div className='landing-link-container projects-link'>
+            <Link to='/projects' className='link'>
+               <p className='projects-link-text'>Projects</p>
+            </Link>
+         </div>
+
+         <div className='middle-landing-container'>
+            <p className='orange-neon'>Kyle<span>__</span>Payne</p>
+            <p className='blue-neon'>Full-Stack<span>__</span>Web<span>__</span>Developer</p>
+         </div>
+
+         <div className='landing-link-container about-link'>
+            <Link to='/about' className='link'>
+               <p className='about-link-text'>About </p>
+            </Link>
+         </div>
+
+         <div className='landing-link-container contact-link'>
+            <Link to='/contact' className='link'>
+               <p className='contact-link-text'>Contact</p>
+            </Link>
+         </div>
+      </div>
+   )
 }

@@ -12,7 +12,7 @@ $background-image: url('./assets/images/brick-wall.jpg');
 //SELECTORS
 .back-button {
    font-size: 2rem;
-   position: fixed;
+   position: absolute;
 	top: 2rem;
 	left: 2rem;
    transition: .1s;

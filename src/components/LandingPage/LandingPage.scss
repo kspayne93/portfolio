@@ -1,6 +1,4 @@
 .landing-page-main {
-	height: 100%;
-	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -99,7 +97,7 @@
 		font-size: 5rem;
 	}
 	@media(max-width: 500px) {
-		font-size: 3rem;
+		font-size: 3.25rem;
 	}
 }
 
@@ -118,7 +116,7 @@
 		font-size: 2.5rem;
 	}
 	@media(max-width: 500px) {
-		font-size: 1rem;
+		font-size: 1.25rem;
 	}
 }
 

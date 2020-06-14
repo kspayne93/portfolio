@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+import 'normalize.css';
 import './App.scss';
 import routes from './routes';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        { routes }
-      </div>
-    );
-  }
+function App () {
+  return (
+    <div className="App">
+      { routes }
+    </div>
+  );
 }
 
 export default App;
