@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './LandingPage.scss';
-import getWindowDimensions from '../../hooks/getWindowDimensions';
 
 const keyboardHeroLanding = require('../../assets/images/keyboardHero/keyboard-hero-landing.png');
 const keyboardHeroImg2 = require('../../assets/images/keyboardHero/keyboard-hero-image-2.png');
@@ -29,8 +28,6 @@ const nimbleProfile = require('../../assets/images/nimble/nimble-profile.png');
 
 
 export default function LandingPage() {
-   const { height, width } = getWindowDimensions();
-
    useEffect(() => {
       const imagesToPreload = [
          keyboardHeroLanding,
@@ -60,7 +57,7 @@ export default function LandingPage() {
    }, []);
 
    return (
-      <div className='landing-page-main' style={{ height: `${height}px`, width: `${width}px`}}>
+      <div className='page landing-page-main'>
          <div className='landing-link-container skills-link'>
             <Link to='/skills' className='link'>
                <p className='skills-link-text'>Skills</p>

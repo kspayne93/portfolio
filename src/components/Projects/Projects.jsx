@@ -137,13 +137,13 @@ export default function Projects() {
    const displayProjects = () => {
       return projects.reverse().map(project => {
          return (
-            <div className='project-card'>
+            <div className='project-card' key={project.name}>
                <div className='slider-container'>
                   <Slider {...sliderSettings} className='slider'>
                      {
                         project.images.map((image, index) => {
                            return (
-                              <div>
+                              <div key={project.name + image}>
                                  <img src={image} alt=""/>
                                  <p>{project.imageDescriptions[index]}</p>
                               </div>
@@ -165,7 +165,7 @@ export default function Projects() {
                         {
                            project.keypoints.map(keypoint => {
                               return (
-                                 <li>{keypoint}</li>
+                                 <li key={keypoint}>{keypoint}</li>
                               )
                            })
                         }

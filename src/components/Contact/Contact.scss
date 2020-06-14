@@ -5,7 +5,6 @@
 	align-items: center;
 	flex-wrap: nowrap;
 	padding: 2rem;
-	overflow: hidden;
 	
 	.contact-title {
 		opacity: 0;
@@ -19,7 +18,7 @@
 	}
 	
 	.contact-icon-container {
-		height: 80vh;
+		height: 100%;
 		animation: fadeIn .25s linear;
 		animation-delay: .2s;
 		animation-fill-mode: forwards;
@@ -56,11 +55,17 @@
 		}
 	}
 
-	@media(max-width: 1000px) {
+}
+
+@media(max-width: 750px) {
+	.contact-page-main {
+		// height: auto;
+		background-color: black;
+
 		.contact-icon-container {
 			div {
 				i {
-					font-size: 2rem;
+					font-size: rem;
 				}
 		
 				p {
@@ -71,36 +76,23 @@
 	}
 }
 
+@media(max-height: 450px) {
+	.contact-page-main {
+		background-color: black;
 
+		.contact-icon-container {
+			flex-direction: row;
+			div {
+				width: 25%;
+				word-break: break-all;
 
-// Animation
-@keyframes contact-expand {
-	0% {
-		opacity: 1;
-		width: 0vw;
-		height: 0vw;
-	}
-	50% {
-		opacity: 1;
-		width: 50vw;
-		max-width: 900px;
-		height: 0vh;
-	}
-	100% {
-		opacity: 1;
-		width: 50vw;
-		max-width: 900px;
-		height: 70vh;
-	}
-}
-
-//MEDIA QUERIES
-@media(max-width: 813px) {
-	.contact-text {
-		div {
-			margin: 1rem;
-			p {
-				font-size: 1rem;
+				i {
+					font-size: rem;
+				}
+		
+				p {
+					font-size: 1rem;
+				}
 			}
 		}
 	}

@@ -5,7 +5,6 @@
 	align-items: center;
 	flex-wrap: nowrap;
 	padding: 2rem;
-	overflow: hidden;
 
 	.about-title {
 		margin: 0;
@@ -14,7 +13,6 @@
 		text-shadow: 0 0 1vw #dcf118, 0 0 3vw #dcf118, 0 0 10vw #dcf118, 0 0 10vw #dcf118, 0 0 .4vw #dcf118, .3vw .3vw .1vw #504400;
 	}
 
-	
 	.about-text {
 		height: 100%;
 		width: 90%;
@@ -36,9 +34,10 @@
 }
 
 // Media Queries
-@media (max-width: 900px) {
+@media (max-width: 750px) {
 	.about-page-main {
 		height: auto;
+		background-color: black;
 
 		.about-text {
 			justify-content: flex-start;

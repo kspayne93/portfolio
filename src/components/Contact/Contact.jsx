@@ -21,11 +21,11 @@ export default function Contact() {
             </div>
             <div>
                <a href="https://www.linkedin.com/in/kylepayne93" target='_blank' rel='noopener noreferrer'><i className="fab fa-linkedin contact-icon"></i></a>
-               <a href="https://www.linkedin.com/in/kylepayne93" target='_blank' rel='noopener noreferrer'><p> www.linkedin.com/in/kylepayne93 </p></a>
+               <a href="https://www.linkedin.com/in/kylepayne93" target='_blank' rel='noopener noreferrer'><p>www.linkedin.com/in/kylepayne93</p></a>
             </div>
             <div>
                <a href="https://www.linkedin.com/in/kylepayne93" target='_blank' rel='noopener noreferrer'><i className="fab fa-github contact-icon"></i></a>
-               <a href="https://www.github.com/kspayne93" target='_blank' rel='noopener noreferrer'><p> www.github.com/kspayne93 </p></a>
+               <a href="https://www.github.com/kspayne93" target='_blank' rel='noopener noreferrer'><p>www.github.com/kspayne93</p></a>
             </div>
          </div>
       </div>

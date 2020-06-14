@@ -109,9 +109,10 @@
 }
 
 
-@media(max-width: 800px) {
+@media(max-width: 750px) {
    .skills-page-main {
       height: auto;
+      background-color: black;
 
       .skills-container {   
          .skill-container {
@@ -126,6 +127,7 @@
 @media(min-width: 2000px) {
    .skills-page-main {
       height: auto;
+      background-color: black;
 
       .skills-container {   
          .skill-container {
