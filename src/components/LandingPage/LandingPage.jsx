@@ -72,7 +72,7 @@ export default function LandingPage() {
 
          <div className='middle-landing-container'>
             <p className='orange-neon'>Kyle<span>__</span>Payne</p>
-            <p className='blue-neon'>Full-Stack<span>__</span>Web<span>__</span>Developer</p>
+            <p className='blue-neon'>Full-Stack<span>___</span>Developer</p>
          </div>
 
          <div className='landing-link-container about-link'>
