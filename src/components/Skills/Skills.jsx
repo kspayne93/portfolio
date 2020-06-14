@@ -9,13 +9,10 @@ import PostgresIcon from '../../assets/svg/PostgresIcon';
 import SassIcon from '../../assets/svg/SassIcon';
 import ReactIcon from '../../assets/svg/ReactIcon';
 import ReduxIcon from '../../assets/svg/ReduxIcon';
-import getWindowDimensions from '../../hooks/getWindowDimensions';
 
 export default function Skills() {
-   const { height, width } = getWindowDimensions();
-
    return (
-      <div className='page skills-page-main' style={{ height: `${height}px`, width: `${width}px`}}>
+      <div className='page skills-page-main'>
          <Link to='/' className='link'>
             <i className="fas fa-undo class back-button"></i>
          </Link>
