@@ -20,7 +20,6 @@ document.querySelector(':root').style.setProperty('--vw', width);
 
 function App () {
   useEffect(() => {
-
     function handleResize() {
       const { height, width } = getWindowDimensions();
       document.querySelector(':root').style.setProperty('--vh', height);
@@ -28,7 +27,12 @@ function App () {
     }
   
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener('orientationchange', handleResize);
+    
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('orientationchange', handleResize);
+    };
 
   }, []);
 
