@@ -17,16 +17,18 @@ document.querySelector(':root').style.setProperty('--vw', width);
 
 function App () {
   useEffect(() => {
-    function handleOrientationChange() {
+    function handleResize() {
       const { height, width } = getWindowDimensions();
       document.querySelector(':root').style.setProperty('--vh', height);
       document.querySelector(':root').style.setProperty('--vw', width);
     }
-
-    window.addEventListener('orientationchange', handleOrientationChange);
+  
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('orientationchange', handleResize);
     
     return () => {
-      window.removeEventListener('orientationchange', handleOrientationChange);
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('orientationchange', handleResize);
     };
 
   }, []);
