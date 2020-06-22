@@ -23,8 +23,6 @@
 		align-items: center;
 		align-content: stretch;
 		padding-top: 1rem;
-		overflow-x: hidden;
-		overflow-y: auto;
 		
 		.project-card {
 			width: 90%;
@@ -76,7 +74,6 @@
 	
 			.project-info-container {
 				width: 40%;
-				height: 100%;
 				padding: 1rem;
 				display: flex;
 				flex-direction: column;
@@ -138,12 +135,13 @@
 
 @media(max-width: 1200px) {
 	.projects-page-main {
+		height: 100%;
+		overflow: auto;
 		background-color: black;
 
 		.projects-container {
 			.project-card {
 				width: 90%;
-				height: auto;
 				flex-direction: column;
 				justify-content: flex-start;
 				background-color: rgba(255, 255, 255, 0.08);
@@ -151,17 +149,14 @@
 	
 				.slider-container {
 					width: 90%;
-					height: auto;
 	
 					.slider {
 						width: 90%;
-						height: auto;
 					}
 				}
 	
 				.project-info-container {
 					width: 100%;
-					height: auto;
 					margin-top: 1rem;
 				}
 			}
