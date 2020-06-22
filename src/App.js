@@ -8,10 +8,7 @@ function getWindowDimensions() {
   const height = `${innerHeight / 100}px`;
   const width = `${innerWidth / 100}px`;
 
-  return {
-    height,
-    width
-  };
+  return {height, width};
 }
 
 const { height, width } = getWindowDimensions();

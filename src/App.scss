@@ -16,6 +16,7 @@
   height: calc(100 * var(--vh));
   width: calc(100 * var(--vw));
   position: relative;
+  overflow: auto;
 }
 
 .link {
