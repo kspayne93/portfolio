@@ -12,13 +12,6 @@
   color: $primary-text-color;
 }
 
-.page {
-  height: calc(100 * var(--vh));
-  width: calc(100 * var(--vw));
-  position: relative;
-  overflow: auto;
-}
-
 .link {
   text-decoration: none;
   color: white;

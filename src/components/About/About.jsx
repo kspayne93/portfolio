@@ -5,7 +5,7 @@ import './About.scss';
 
 export default function About() {
    return (
-      <div className='page about-page-main'>
+      <div className='about-page-main'>
          <Link to='/' className='link'>
             <i className="fas fa-undo class back-button"></i>
          </Link>

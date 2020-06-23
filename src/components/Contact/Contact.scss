@@ -1,4 +1,9 @@
 .contact-page-main {
+	height: calc(100 * var(--vh));
+	min-height: 100vh;
+	width: calc(100 * var(--vw));
+	min-width: 100vw;
+   overflow: auto;
    display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -59,9 +64,9 @@
 
 @media(max-width: 750px) {
 	.contact-page-main {
-		// height: auto;
+		min-height: 100%;
 		background-color: black;
-
+		
 		.contact-icon-container {
 			div {
 				i {
@@ -78,8 +83,9 @@
 
 @media(max-height: 450px) {
 	.contact-page-main {
+		min-height: 100%;
 		background-color: black;
-
+		
 		.contact-icon-container {
 			flex-direction: row;
 			div {

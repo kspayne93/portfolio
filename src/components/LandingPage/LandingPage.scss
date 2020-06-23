@@ -1,4 +1,9 @@
 .landing-page-main {
+	height: calc(100 * var(--vh));
+	min-height: 100%;
+	width: calc(100 * var(--vw));
+	min-width: 100vw;
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

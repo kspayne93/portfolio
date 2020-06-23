@@ -26,7 +26,6 @@ const nimbleDragNDrop = require('../../assets/images/nimble/nimble-dragndrop.png
 const nimbleEditList = require('../../assets/images/nimble/nimble-edit-list.png');
 const nimbleProfile = require('../../assets/images/nimble/nimble-profile.png');
 
-
 export default function LandingPage() {
    useEffect(() => {
       const imagesToPreload = [
@@ -57,7 +56,7 @@ export default function LandingPage() {
    }, []);
 
    return (
-      <div className='page landing-page-main'>
+      <div className='landing-page-main'>
          <div className='landing-link-container skills-link'>
             <Link to='/skills' className='link'>
                <p className='skills-link-text'>Skills</p>

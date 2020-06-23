@@ -5,7 +5,7 @@ import './Contact.scss';
 
 export default function Contact() {
    return (
-      <div className='page contact-page-main'>
+      <div className='contact-page-main'>
          <Link to='/' className='link'>
             <i className="fas fa-undo class back-button"></i>
          </Link>
