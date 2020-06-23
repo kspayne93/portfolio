@@ -14,7 +14,7 @@ export default function Skills() {
    return (
       <div className='page skills-page-main'>
          <Link to='/' className='link'>
-            <i className="fas fa-undo class back-button"></i>
+            <i className="back-button fas fa-arrow-left"></i>
          </Link>
          
          <h1 className='skills-title'>Skills</h1>

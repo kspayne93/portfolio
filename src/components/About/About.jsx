@@ -7,7 +7,7 @@ export default function About() {
    return (
       <div className='about-page-main'>
          <Link to='/' className='link'>
-            <i className="fas fa-undo class back-button"></i>
+            <i className="back-button fas fa-arrow-left"></i>
          </Link>
          <h1 className='about-title'>About Me:</h1>
          <div className='about-text'>

@@ -197,7 +197,7 @@ export default function Projects() {
    return (
       <div className='projects-page-main'>
          <Link to='/' className='link'>
-            <i className="fas fa-undo class back-button"></i>
+            <i className="back-button fas fa-arrow-left"></i>
          </Link>
          <h1 className='projects-title'>Projects</h1>
          

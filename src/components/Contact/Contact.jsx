@@ -7,7 +7,7 @@ export default function Contact() {
    return (
       <div className='contact-page-main'>
          <Link to='/' className='link'>
-            <i className="fas fa-undo class back-button"></i>
+            <i className="back-button fas fa-arrow-left"></i>
          </Link>
          <h1 className='contact-title'>Contact:</h1>
          <div className='contact-icon-container'>

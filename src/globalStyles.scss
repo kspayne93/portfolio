@@ -11,10 +11,10 @@ $background-image: url('./assets/images/brick-wall.jpg');
 
 //SELECTORS
 .back-button {
-   font-size: 2rem;
+   font-size: 1.75rem;
    position: absolute;
-	top: 2rem;
-	left: 2rem;
+	top: 1.5rem;
+	left: 1.5rem;
    transition: .1s;
    color: #ffffff;
    text-shadow: 0 0 1vw #b1b1b1, 0 0 3vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 .4vw #b1b1b1, .3vw .3vw .1vw #444141;
@@ -22,6 +22,13 @@ $background-image: url('./assets/images/brick-wall.jpg');
    
    &:hover {
       text-shadow: 0 0 1vw #ffffff, 0 0 3vw #ffffff, 0 0 10vw #ffffff, 0 0 10vw #ffffff, 0 0 .4vw #ffffff, .3vw .3vw .1vw #444141;
+   }
+
+}
+
+@media(max-width: 750px) {
+   .back-button {
+      font-size: 1.5rem;
    }
 }
 
