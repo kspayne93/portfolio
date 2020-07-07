@@ -1,7 +1,7 @@
 .contact-page-main {
-	height: calc(100 * var(--vh));
+	height: 100vh;
 	min-height: 100vh;
-	width: calc(100 * var(--vw));
+	width: 100vw;
 	min-width: 100vw;
    overflow: auto;
    display: flex;
@@ -101,9 +101,5 @@
 				}
 			}
 		}
-	}
-
-	.safari-only {
-		min-height: 100vh;
 	}
 }
