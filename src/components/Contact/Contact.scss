@@ -60,10 +60,9 @@
 			}
 		}
 	}
-
 }
 
-@media(max-width: 750px) {
+@media(max-width: 850px) {
 	.contact-page-main {
 		min-height: 100%;
 		background-color: black;
@@ -102,5 +101,9 @@
 				}
 			}
 		}
+	}
+
+	.safari-only {
+		min-height: 100vh;
 	}
 }

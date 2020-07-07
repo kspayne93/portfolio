@@ -4,8 +4,10 @@ import './Contact.scss';
 
 
 export default function Contact() {
+   const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
    return (
-      <div className='contact-page-main'>
+      <div className={'contact-page-main' + (isSafari && ' safari-only')}>
          <Link to='/' className='link'>
             <i className="back-button fas fa-arrow-left"></i>
          </Link>
