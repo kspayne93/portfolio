@@ -27,64 +27,68 @@ const nimbleEditList = require('../../assets/images/nimble/nimble-edit-list.png'
 const nimbleProfile = require('../../assets/images/nimble/nimble-profile.png');
 
 export default function LandingPage() {
-   useEffect(() => {
-      const imagesToPreload = [
-         keyboardHeroLanding,
-         keyboardHeroImg2,
-         keyboardHeroImg3,
-         keyboardHeroImg4,
-         kanooLanding,
-         kanooImg2,
-         kanooImg3,
-         kanooImg4,
-         kanooImg5,
-         nimbleLanding,
-         nimbleLogin,
-         nimbleDashboardOverview,
-         nimbleMyTasks,
-         nimbleUnassignedTasks,
-         nimblePeople,
-         nimbleProjectSettings,
-         nimbleSearch,
-         nimbleAddTask,
-         nimbleDragNDrop,
-         nimbleEditList,
-         nimbleProfile,
-      ];
+  useEffect(() => {
+    const imagesToPreload = [
+      keyboardHeroLanding,
+      keyboardHeroImg2,
+      keyboardHeroImg3,
+      keyboardHeroImg4,
+      kanooLanding,
+      kanooImg2,
+      kanooImg3,
+      kanooImg4,
+      kanooImg5,
+      nimbleLanding,
+      nimbleLogin,
+      nimbleDashboardOverview,
+      nimbleMyTasks,
+      nimbleUnassignedTasks,
+      nimblePeople,
+      nimbleProjectSettings,
+      nimbleSearch,
+      nimbleAddTask,
+      nimbleDragNDrop,
+      nimbleEditList,
+      nimbleProfile,
+    ];
 
-      imagesToPreload.forEach(image => new Image().src = image);
-   }, []);
+    imagesToPreload.forEach(image => (new Image().src = image));
+  }, []);
 
-   return (
-      <div className='landing-page-main'>
-         <div className='landing-link-container skills-link'>
-            <Link to='/skills' className='link'>
-               <p className='skills-link-text'>Skills</p>
-            </Link>
-         </div>
-
-         <div className='landing-link-container projects-link'>
-            <Link to='/projects' className='link'>
-               <p className='projects-link-text'>Projects</p>
-            </Link>
-         </div>
-
-         <div className='middle-landing-container'>
-            <p className='orange-neon'>Kyle<span>__</span>Payne</p>
-            <p className='blue-neon'>Full-Stack<span>___</span>Developer</p>
-         </div>
-
-         <div className='landing-link-container about-link'>
-            <Link to='/about' className='link'>
-               <p className='about-link-text'>About </p>
-            </Link>
-         </div>
-
-         <div className='landing-link-container contact-link'>
-            <Link to='/contact' className='link'>
-               <p className='contact-link-text'>Contact</p>
-            </Link>
-         </div>
+  return (
+    <div className='landing-page-main'>
+      <div className='landing-link-container skills-link'>
+        <Link to='/skills' className='link'>
+          <p className='skills-link-text'>Skills</p>
+        </Link>
       </div>
-   )
+
+      <div className='landing-link-container projects-link'>
+        <Link to='/projects' className='link'>
+          <p className='projects-link-text'>Projects</p>
+        </Link>
+      </div>
+
+      <div className='middle-landing-container'>
+        <p className='orange-neon'>
+          Kyle<span>__</span>Payne
+        </p>
+        <p className='blue-neon'>
+          Full-Stack<span>___</span>Developer
+        </p>
+      </div>
+
+      <div className='landing-link-container about-link'>
+        <Link to='/about' className='link'>
+          <p className='about-link-text'>About </p>
+        </Link>
+      </div>
+
+      <div className='landing-link-container contact-link'>
+        <Link to='/contact' className='link'>
+          <p className='contact-link-text'>Contact</p>
+        </Link>
+      </div>
+    </div>
+  );
 }

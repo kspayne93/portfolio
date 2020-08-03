@@ -1,170 +1,171 @@
 .projects-page-main {
-	height: 100vh;
-   min-height: 100vh;
-   width: 100vw;
-   min-width: 100vw;
-	overflow: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	flex-wrap: nowrap;
-	padding: 2rem 0 0 0;
-	position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  min-width: 100vw;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 2rem 0 0 0;
+  position: relative;
 
-	.projects-title {
-		margin: 0 0 2rem 0;
-		font-family: neon;
-		color: #00ffdd;
-		text-shadow: 0 0 1vw #03d47d, 0 0 3vw #03d47d, 0 0 10vw #03d47d, 0 0 10vw #03d47d, 0 0 .4vw #03d47d, .3vw .3vw .1vw #043127;
-	}
+  .projects-title {
+    margin: 0 0 2rem 0;
+    font-family: neon;
+    color: #00ffdd;
+    text-shadow: 0 0 1vw #03d47d, 0 0 3vw #03d47d, 0 0 10vw #03d47d, 0 0 10vw #03d47d, 0 0 0.4vw #03d47d,
+      0.3vw 0.3vw 0.1vw #043127;
+  }
 
-	.projects-container {
-		height: 100%;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		justify-content: flex-start;
-		align-items: center;
-		align-content: stretch;
-		padding-top: 1rem;
-		
-		.project-card {
-			width: 90%;
-			height: auto;
-			padding: 2rem 0;
-			margin-bottom: 2rem;
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			background-color: rgba(0, 0, 0, 0.55);
-	
-			.slider-container {
-				height: 100%;
-				width: 60%;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-	
-				.slider {
-					width: 90%;
-					height: auto;
-		
-					div {
-						img {
-							width: 100%;
-							height: auto;
-						}
-					}
-					
-					p {
-						margin: 1rem 0 2rem 0;
-					}
-	
-					.slick-dots {
-						bottom: 0;
-						left: 0;
-	
-						li button {
-							margin: 0;
-							&::before {
-								color: white;
-							}
-						}
-					}
-				}
-			}
-	
-			.project-info-container {
-				width: 40%;
-				padding: 1rem;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				flex-wrap: nowrap;
-			}
-	
-			.project-header {
-				width: 100%;
-	
-				p {
-					font-size: 1.5rem;
-					margin: 0;
-				}
-			}
-	
-			.project-technologies {
-				p {
-					color: salmon;
-				}
-			}
-	
-			.project-keypoints {
-				text-align: left;
-				margin: 0 0 1rem 0;
-	
-				li {
-					margin-bottom: .5rem;
-				}
-			}
-	
-			.project-links {
-				width: 100%;
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-	
-				p, a {
-					margin: 0 0 .5rem 0;
-				}
-	
-				div {
-					width: 50%;
-					display: flex;
-					flex-direction: column;
-					justify-content: flex-start;
-					align-items: center;
-				}
-	
-				a {
-					color: #0bd4ba;
-				}
-			}
-		}
-	}
-	
+  .projects-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    padding-top: 1rem;
+
+    .project-card {
+      width: 90%;
+      height: auto;
+      padding: 2rem 0;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.55);
+
+      .slider-container {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .slider {
+          width: 90%;
+          height: auto;
+
+          div {
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          p {
+            margin: 1rem 0 2rem 0;
+          }
+
+          .slick-dots {
+            bottom: 0;
+            left: 0;
+
+            li button {
+              margin: 0;
+              &::before {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+
+      .project-info-container {
+        width: 40%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+      }
+
+      .project-header {
+        width: 100%;
+
+        p {
+          font-size: 1.5rem;
+          margin: 0;
+        }
+      }
+
+      .project-technologies {
+        p {
+          color: salmon;
+        }
+      }
+
+      .project-keypoints {
+        text-align: left;
+        margin: 0 0 1rem 0;
+
+        li {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .project-links {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        p,
+        a {
+          margin: 0 0 0.5rem 0;
+        }
+
+        div {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        a {
+          color: #0bd4ba;
+        }
+      }
+    }
+  }
 }
 
-@media(max-width: 1200px) {
-	.projects-page-main {
-		height: 100%;
-		background-color: black;
+@media (max-width: 1200px) {
+  .projects-page-main {
+    height: 100%;
+    background-color: black;
 
-		.projects-container {
-			.project-card {
-				width: 90%;
-				flex-direction: column;
-				justify-content: flex-start;
-				background-color: rgba(255, 255, 255, 0.08);
-				border-radius: .5rem;
-	
-				.slider-container {
-					width: 90%;
-	
-					.slider {
-						width: 90%;
-					}
-				}
-	
-				.project-info-container {
-					width: 100%;
-					margin-top: 1rem;
-				}
-			}
-		}
-	}
+    .projects-container {
+      .project-card {
+        width: 90%;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 0.5rem;
+
+        .slider-container {
+          width: 90%;
+
+          .slider {
+            width: 90%;
+          }
+        }
+
+        .project-info-container {
+          width: 100%;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
 }
