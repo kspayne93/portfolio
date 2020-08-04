@@ -70,7 +70,7 @@ export default function Projects() {
       ],
       technologies: 'REACT | NODE | POSTGRESQL',
       liveSiteURL: 'https://www.keyboardhero.fun',
-      codeURL: 'https://github.com/kspayne93/keyboard-hero',
+      codeURL: 'https://github.com/motogoozy/keyboard-hero',
       images: [keyboardHeroLanding, keyboardHeroImg2, keyboardHeroImg3, keyboardHeroImg4],
       imageDescriptions: [
         'Landing page',
@@ -91,7 +91,7 @@ export default function Projects() {
       liveSiteURL: 'https://nimblemanager.com/',
       username: 'demo@demo.com',
       password: 'demo',
-      codeURL: 'https://github.com/kspayne93/nimble',
+      codeURL: 'https://github.com/motogoozy/nimble',
       images: [
         nimbleLanding,
         nimbleLogin,
