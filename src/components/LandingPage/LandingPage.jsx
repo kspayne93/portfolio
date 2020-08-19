@@ -80,7 +80,7 @@ export default function LandingPage() {
 
       <div className='landing-link-container about-link'>
         <Link to='/about' className='link'>
-          <p className='about-link-text'>About </p>
+          <p className='about-link-text'>About</p>
         </Link>
       </div>
 

@@ -16,10 +16,12 @@ export default function Contact() {
           <i className='far fa-envelope contact-icon'></i>
           <p>kspayne93@gmail.com</p>
         </div>
+
         <div>
           <i className='fas fa-mobile-alt contact-icon'></i>
           <p>(385) 335-1329</p>
         </div>
+
         <div>
           <a href='https://www.linkedin.com/in/kylepayne93' target='_blank' rel='noopener noreferrer'>
             <i className='fab fa-linkedin contact-icon'></i>
@@ -28,12 +30,22 @@ export default function Contact() {
             <p>View LinkedIn Profile</p>
           </a>
         </div>
+
         <div>
           <a href='https://www.github.com/motogoozy' target='_blank' rel='noopener noreferrer'>
             <i className='fab fa-github contact-icon'></i>
           </a>
           <a href='https://www.github.com/motogoozy' target='_blank' rel='noopener noreferrer'>
             <p>View GitHub Profile</p>
+          </a>
+        </div>
+
+        <div>
+          <a href={require('../../assets/resume.pdf')} target='_blank' rel='noopener noreferrer'>
+            <i className='fas fa-file-download contact-icon'></i>
+          </a>
+          <a href={require('../../assets/resume.pdf')} target='_blank' rel='noopener noreferrer'>
+            <p>View / Download Resume</p>
           </a>
         </div>
       </div>
