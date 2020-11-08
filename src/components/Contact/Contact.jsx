@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import './Contact.scss';
 
 export default function Contact() {
-  // const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
   return (
     <div className='contact-page-main'>
       <Link to='/' className='link'>
@@ -41,10 +39,10 @@ export default function Contact() {
         </div>
 
         <div>
-          <a href={require('../../assets/resume.pdf')} target='_blank' rel='noopener noreferrer'>
+          <a href={require('../../assets/kyle-payne-resume.pdf')} target='_blank' rel='noopener noreferrer'>
             <i className='fas fa-file-download contact-icon'></i>
           </a>
-          <a href={require('../../assets/resume.pdf')} target='_blank' rel='noopener noreferrer'>
+          <a href={require('../../assets/kyle-payne-resume.pdf')} target='_blank' rel='noopener noreferrer'>
             <p>View / Download Resume</p>
           </a>
         </div>
