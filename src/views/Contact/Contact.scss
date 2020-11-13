@@ -13,10 +13,6 @@
   position: relative;
 
   .contact-title {
-    opacity: 0;
-    animation: fadeIn 0s linear;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
     margin: 0 0 2rem 0;
     font-family: neon;
     color: #ff0000;
@@ -26,10 +22,6 @@
 
   .contact-icon-container {
     height: 100%;
-    animation: fadeIn 0.25s linear;
-    animation-delay: 0.2s;
-    animation-fill-mode: forwards;
-    opacity: 0;
     padding: 1em;
     display: flex;
     flex-direction: column;

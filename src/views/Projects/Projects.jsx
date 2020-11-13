@@ -183,9 +183,8 @@ export default function Projects() {
       <Link to='/' className='link'>
         <i className='back-button fas fa-arrow-left'></i>
       </Link>
-      <h1 className='projects-title'>Projects</h1>
-
-      <div className='projects-container'>{displayProjects()}</div>
+      <h1 className='projects-title main-fade-in'>Projects</h1>
+      <div className='projects-container main-fade-in'>{displayProjects()}</div>
     </div>
   );
 }

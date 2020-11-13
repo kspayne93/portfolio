@@ -8,8 +8,8 @@ export default function Contact() {
       <Link to='/' className='link'>
         <i className='back-button fas fa-arrow-left'></i>
       </Link>
-      <h1 className='contact-title'>Contact:</h1>
-      <div className='contact-icon-container'>
+      <h1 className='contact-title main-fade-in'>Contact:</h1>
+      <div className='contact-icon-container main-fade-in'>
         <div>
           <i className='far fa-envelope contact-icon'></i>
           <p>kspayne93@gmail.com</p>

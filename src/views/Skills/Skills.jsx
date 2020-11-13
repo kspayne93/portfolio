@@ -17,7 +17,7 @@ export default function Skills() {
         <i className='back-button fas fa-arrow-left'></i>
       </Link>
 
-      <h1 className='skills-title'>Skills</h1>
+      <h1 className='skills-title main-fade-in'>Skills</h1>
 
       <div className='skills-container'>
         <div className='skill-container skill-1'>

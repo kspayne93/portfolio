@@ -8,8 +8,8 @@ export default function About() {
       <Link to='/' className='link'>
         <i className='back-button fas fa-arrow-left'></i>
       </Link>
-      <h1 className='about-title'>About Me:</h1>
-      <div className='about-text'>
+      <h1 className='about-title main-fade-in'>About Me:</h1>
+      <div className='about-text main-fade-in'>
         <p>
           Coming from an analytics and real estate background, many times I felt that my creative options were limited.
           Since I have always loved being challenged and learning new things, I started learning to program out of
