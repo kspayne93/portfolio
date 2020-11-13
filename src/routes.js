@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import LandingPage from './components/LandingPage/LandingPage';
-import Projects from './components/Projects/Projects';
-import Skills from './components/Skills/Skills';
+import About from './views/About/About';
+import Contact from './views/Contact/Contact';
+import LandingPage from './views/LandingPage/LandingPage';
+import Projects from './views/Projects/Projects';
+import Skills from './views/Skills/Skills';
 
 export default (
   <Switch>
