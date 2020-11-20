@@ -1,1 +1,1 @@
-Developer portfolio to showcase skills and projects. 
+Developer portfolio to showcase skills and projects.

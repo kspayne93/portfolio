@@ -1,10 +1,10 @@
-//FONTS
+// FONTS
 @font-face {
   font-family: neon;
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
 }
 
-//VARIABLES
+// VARIABLES
 $primary-background-color: black;
 $primary-text-color: white;
 $background-image: url('./assets/images/brick-wall.jpg');
@@ -14,6 +14,8 @@ $background-image: url('./assets/images/brick-wall.jpg');
   position: absolute;
   top: 1.5rem;
   left: 1.5rem;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
   transition: 0.1s;
   color: #ffffff;
   text-shadow: 0 0 1vw #b1b1b1, 0 0 3vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 10vw #b1b1b1, 0 0 0.4vw #b1b1b1,
@@ -28,8 +30,11 @@ $background-image: url('./assets/images/brick-wall.jpg');
 
 .main-fade-in {
   opacity: 0;
+  -webkit-animation: fadeIn 0.2s linear;
   animation: fadeIn 0.2s linear;
+  -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
@@ -39,7 +44,16 @@ $background-image: url('./assets/images/brick-wall.jpg');
   }
 }
 
-//ANIMATIONS
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

@@ -4,9 +4,18 @@
   width: 100vw;
   min-width: 100vw;
   overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 2rem;
   position: relative;
@@ -22,20 +31,40 @@
   .skills-container {
     width: 90%;
     height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-line-pack: stretch;
     align-content: stretch;
 
     .skill-container {
       height: 12rem;
       width: 12rem;
       margin: 1rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
 
       p {
@@ -49,64 +78,91 @@
     }
 
     .skill-1 {
+      -webkit-animation: fadeIn 0.5s linear;
       animation: fadeIn 0.5s linear;
+      -webkit-animation-delay: 0.25s;
       animation-delay: 0.25s;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
       opacity: 0;
     }
 
     .skill-2 {
+      -webkit-animation: fadeIn 0.5s linear;
       animation: fadeIn 0.5s linear;
+      -webkit-animation-delay: 0.5s;
       animation-delay: 0.5s;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
       opacity: 0;
     }
 
     .skill-3 {
+      -webkit-animation: fadeIn 0.5s linear;
       animation: fadeIn 0.5s linear;
+      -webkit-animation-delay: 0.75s;
       animation-delay: 0.75s;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
       opacity: 0;
     }
 
     .skill-4 {
+      -webkit-animation: fadeIn 0.5s linear;
       animation: fadeIn 0.5s linear;
+      -webkit-animation-delay: 1s;
       animation-delay: 1s;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
       opacity: 0;
     }
 
     .skill-5 {
+      -webkit-animation: fadeIn 0.5s linear;
       animation: fadeIn 0.5s linear;
+      -webkit-animation-delay: 1.25s;
       animation-delay: 1.25s;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
       opacity: 0;
     }
 
     .skill-6 {
+      -webkit-animation: fadeIn 0.5s linear;
       animation: fadeIn 0.5s linear;
+      -webkit-animation-delay: 1.5s;
       animation-delay: 1.5s;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
       opacity: 0;
     }
 
     .skill-7 {
+      -webkit-animation: fadeIn 0.5s linear;
       animation: fadeIn 0.5s linear;
+      -webkit-animation-delay: 1.75s;
       animation-delay: 1.75s;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
       opacity: 0;
     }
 
     .skill-8 {
+      -webkit-animation: fadeIn 0.5s linear;
       animation: fadeIn 0.5s linear;
+      -webkit-animation-delay: 2s;
       animation-delay: 2s;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
       opacity: 0;
     }
 
     .and-more-text {
+      -webkit-animation: fadeIn 0.5s linear;
       animation: fadeIn 0.5s linear;
+      -webkit-animation-delay: 2.75s;
       animation-delay: 2.75s;
+      -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
       opacity: 0;
     }
