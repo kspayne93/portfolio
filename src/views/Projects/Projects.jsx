@@ -181,7 +181,7 @@ export default function Projects() {
   return (
     <div className='projects-page-main'>
       <Link to='/' className='link'>
-        <i className='back-button fas fa-arrow-left'></i>
+        <i className='back-button fas fa-arrow-left' />
       </Link>
       <h1 className='projects-title main-fade-in'>Projects</h1>
       <div className='projects-container main-fade-in'>{displayProjects()}</div>
