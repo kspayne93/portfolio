@@ -16,11 +16,6 @@ export default function Contact() {
         </div>
 
         <div>
-          <i className='fas fa-mobile-alt contact-icon'></i>
-          <p>(385) 335-1329</p>
-        </div>
-
-        <div>
           <a href='https://www.linkedin.com/in/kylepayne93' target='_blank' rel='noopener noreferrer'>
             <i className='fab fa-linkedin contact-icon'></i>
           </a>
