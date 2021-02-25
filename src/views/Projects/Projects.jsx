@@ -48,7 +48,7 @@ export default function Projects() {
         `Built with a focus on design, the end result is a simple yet intuitive user experience that displays a user's travel details all in one place`,
       ],
       technologies: 'REACT | NODE | POSTGRESQL',
-      liveSiteURL: 'https://kanoo.fun/#/',
+      liveSiteURL: '',
       username: 'k',
       password: 'k',
       codeURL: 'https://github.com/wpr-45-studentdevs/travel-app',
@@ -69,7 +69,7 @@ export default function Projects() {
         `Uses Javascript to check for user's typing accuracy in real-time`,
       ],
       technologies: 'REACT | NODE | POSTGRESQL',
-      liveSiteURL: 'https://www.keyboardhero.fun',
+      liveSiteURL: '',
       codeURL: 'https://github.com/motogoozy/keyboard-hero',
       images: [keyboardHeroLanding, keyboardHeroImg2, keyboardHeroImg3, keyboardHeroImg4],
       imageDescriptions: [
@@ -155,17 +155,19 @@ export default function Projects() {
               </ul>
             </div>
             <div className='project-links'>
-              <div className='live-site-link'>
-                <a target='_blank' href={project.liveSiteURL} rel='noopener noreferrer'>
-                  View Live Site
-                </a>
-                {project.username && project.password && (
-                  <>
-                    <p>Username: {project.username}</p>
-                    <p>Password: {project.password}</p>
-                  </>
-                )}
-              </div>
+              {project.liveSiteURL && (
+                <div className='live-site-link'>
+                  <a target='_blank' href={project.liveSiteURL} rel='noopener noreferrer'>
+                    View Live Site
+                  </a>
+                  {project.username && project.password && (
+                    <>
+                      <p>Username: {project.username}</p>
+                      <p>Password: {project.password}</p>
+                    </>
+                  )}
+                </div>
+              )}
               <div className='code-link'>
                 <a target='_blank' href={project.codeURL} rel='noopener noreferrer'>
                   View Code
